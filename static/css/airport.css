@@ -133,15 +133,58 @@ footer>a.glyphicon:not(.button):before {
 
 .input-group {
     margin-top: .2em;
-    padding: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 5px 0 0;
 }
 .input-group-addon {
     background: none;
     border: none;
 }
+.input-group input:not([type="submit"]):not([type="button"]):last-child, .input-group textarea:last-child, .input-group select:last-child {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.input-group input {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2 auto;
+    -webkit-flex: 2 auto;
+    -ms-flex: 2 auto;
+    flex: 2 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input-group label {
+    text-align: left;
+    width: 100px;
+    padding-right: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 table {
     width: 100%;
+}
+/* 通用按钮 */
+.btn-normal {
+    margin: 0 15px;
+    background-color: #00bcd4;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
 }
 
 /* 分类卡片 */

@@ -1,3 +1,12 @@
+/* 重写jqMobi样式 */
+.view > header {
+    display: none !important;
+}
+
+.panel {
+    padding: 0;
+}
+
 .flex {
     display: -webkit-box;
     display: -moz-box;
@@ -16,4 +25,253 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1);
+    transform: translate(0px, 0px) translateZ(0px);
+}
+form > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 5px 0 0;
+    position: relative;
+}
+form > div label {
+    text-align: left;
+    width: 100px;
+    padding-right: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+form > div input[type="text"],form > div input[type="tel"] {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2 auto;
+    -webkit-flex: 2 auto;
+    -ms-flex: 2 auto;
+    flex: 2 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+
+    width: 100%;
+}
+form > div i.glyphicon {
+    right: 20px;
+    top: 10px;
+    font-size: 15px;
+    color: #666;
+}
+
+/* 头部 */
+.header {
+    background-image: url("../image/bg_top.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 50px;
+    padding: 10px 5px;
+    position: relative;
+}
+.header h1 {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    width: 100%;
+}
+.header h1 i {
+    top: -7px;
+    margin-left: 8px;
+}
+.header .goBack {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 9999;
+}
+
+/* banner 图片 */
+#banner {
+    position: relative;
+}
+#banner img {
+    height: 168px;
+    width: 100%
+}
+/* 天气预报 */
+#weather {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+}
+#weather div, #weather ul {
+    display: inline-block;
+}
+#weather .icon {
+    margin-right: 10px;
+}
+#weather ul {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+/* 机场公告 */
+#notice {
+    height: 40px;
+    margin-left: 10px;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+#notice td:first-child {
+    width: 80px;
+    text-align: center;
+}
+#notice td:nth-child(2) {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+#notice td:last-child {
+    width: 45px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+/* 主菜单 */
+#main_menu {
+    border-collapse:separate;
+    border-spacing:10px 10px;
+}
+#main_menu td {
+    height: 64px;
+    width: 160px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1);
+    transform: translate(0px, 0px) translateZ(0px);
+    padding: 0 10px;
+}
+#main_menu a {
+
+}
+#main_menu a img {
+    width: 29px;
+    height: 29px;
+}
+#main_menu a span {
+    float: right;
+}
+/* 底部 */
+footer a {
+    text-align: center;
+}
+#icon_main, #icon_nav, #icon_state, #icon_mall, #icon_person {
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    margin: auto auto 5px;
+    background-size: cover;
+}
+#icon_main {
+    background-image: url("../image/首页/首页2.png");
+}
+footer a.pressed #icon_main {
+    background-image: url("../image/首页/首页.png");
+}
+#icon_nav {
+    background-image: url("../image/首页/机场导航2.png");
+}
+footer a.pressed #icon_nav {
+    background-image: url("../image/首页/机场导航.png");
+}
+#icon_state {
+    background-image: url("../image/首页/航班动态2.png");
+}
+footer a.pressed #icon_state {
+    background-image: url("../image/首页/航班动态.png");
+}
+#icon_mall {
+    background-image: url("../image/首页/机场商城2.png");
+}
+footer a.pressed #icon_mall {
+    background-image: url("../image/首页/机场商城.png");
+}
+#icon_person {
+    background-image: url("../image/首页/个人中心2.png");
+}
+footer a.pressed #icon_person {
+    background-image: url("../image/首页/个人中心.png");
+}
+
+/* ======================================= 快捷值机 ==========================================================*/
+#form_checkIn .flex {
+    margin: -10px 0 18px 18px;
+}
+#form_checkIn select:after {
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    margin: auto auto 5px;
+    background-size: cover;
+    content: "\e252";
+}
+#form_checkIn select:first-child, #form_checkIn select:nth-child(2), #form_checkIn select:nth-child(3) {
+    margin-right: 10px;
+}
+#service_fee {
+    text-align: right;
+    padding: 0 30px 15px 0;
+}
+#service_fee span {
+
 }

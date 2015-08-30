@@ -1,0 +1,45 @@
+/* 头部 */
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.header h1 i {
+    font-size: 10px;
+}
+.header .goBack i {
+    font-size: 30px;
+    color: #666;
+}
+/* 天气预报 */
+#weather {
+    color: #fff;
+}
+#weather span, #weather i.icon {
+    font-size: 36px;
+}
+#weather ul {
+    font-size: 18px;
+}
+/* 机场公告 */
+#notice td {
+    font-size: 20px;
+}
+#notice td:first-child {
+    color: #666;
+}
+#notice td:nth-child(2) {
+    color: #999;
+}
+/* 主菜单 */
+#main_menu a {
+    font-size: 22px;
+    color: #333;
+}
+/* ======================================= 快捷值机 ==========================================================*/
+#service_fee {
+    font-size: 15px;
+}
+#service_fee span {
+    font-size: 30px;
+    color: #00bcd4;
+}
