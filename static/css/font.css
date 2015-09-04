@@ -43,3 +43,31 @@
     font-size: 30px;
     color: #00bcd4;
 }
+/* ======================================= 餐厅 ==========================================================*/
+li.normal_panel a {
+    color: #000;
+}
+li.normal_panel a > p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+}
+li.normal_panel a > p .pull-right {
+    font-size: 15px;
+}
+/* ======================================= 餐厅详情 ==========================================================*/
+#restaurant_detail .header .title h1 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+#restaurant_detail .header .title h3 {
+    font-size: 18px;
+    margin-top: 10px
+}
+#restaurant_detail .normal_panel ul li h3 {
+    font-size: 18px;
+}
+#restaurant_detail .normal_panel ul li span {
+    font-size: 25px;
+    color: #ff4c6a;
+}

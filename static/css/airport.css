@@ -186,6 +186,13 @@ table {
     font-size: 18px;
     color: #fff;
 }
+.btn-normal-small {
+    margin: 0 15px;
+    background-color: #00bcd4;
+    padding: 3px 20px;
+    font-size: 16px;
+    color: #fff;
+}
 
 /* 分类卡片 */
 .category_card {

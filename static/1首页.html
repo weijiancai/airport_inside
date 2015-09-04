@@ -25,6 +25,7 @@
 
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
     <script type="text/javascript" src="js/jqmobi/appframework.ui.js"></script>
     <script type="text/javascript" src="js/airport.js"></script>
 </head>
@@ -46,50 +47,54 @@
                 <div class="header">
                     <h1>北京首都<i class="glyphicon glyphicon-triangle-bottom"></i></h1>
                 </div>
-                <div id="banner">
-                    <img src="./image/guilin.jpg">
+                <div class="content">
+                    <div>
+                        <div id="banner">
+                            <img src="./image/guilin.jpg">
 
-                    <!-- 天气预报 -->
-                    <div id="weather">
-                        <div>
-                            <i class="icon iconfont">&#xf0206;</i>
-                            <span>27<sup>。</sup></span>
+                            <!-- 天气预报 -->
+                            <div id="weather">
+                                <div>
+                                    <i class="icon iconfont">&#xf0206;</i>
+                                    <span>27<sup>。</sup></span>
+                                </div>
+                                <ul>
+                                    <li>能见度：6000（米）</li>
+                                    <li>风力：东偏东南风 -2级</li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul>
-                            <li>能见度：6000（米）</li>
-                            <li>风力：东偏东南风 -2级</li>
-                        </ul>
+
+                        <!-- 机场公告 -->
+                        <table id="notice">
+                            <tr>
+                                <td>机场公告</td>
+                                <td>大家都觉得基督教就多久到家艰难的决定</td>
+                                <td><i class="glyphicon glyphicon-menu-right"></i></td>
+                            </tr>
+                        </table>
+
+                        <!-- 主菜单 -->
+                        <table id="main_menu">
+                            <tr>
+                                <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/快捷值机.png"><span>快捷值机</span></a></td>
+                                <td><a href="3联程服务.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/联程服务.png"><span>联程服务</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="4贵宾服务.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/贵宾服务.png"><span>贵宾服务</span></a></td>
+                                <td><a href="5机场陪同.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/机场陪同.png"><span>机场陪同</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="6机场交通.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/机场交通.png"><span>机场交通</span></a></td>
+                                <td><a href="7-1机场服务1.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/机场服务.png"><span>机场服务</span></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/商务飞行.png"><span>商务飞行</span></a></td>
+                                <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/人工服务.png"><span>人工服务</span></a></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-
-                <!-- 机场公告 -->
-                <table id="notice">
-                    <tr>
-                        <td>机场公告</td>
-                        <td>大家都觉得基督教就多久到家艰难的决定</td>
-                        <td><i class="glyphicon glyphicon-menu-right"></i></td>
-                    </tr>
-                </table>
-
-                <!-- 主菜单 -->
-                <table id="main_menu">
-                    <tr>
-                        <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/快捷值机.png"><span>快捷值机</span></a></td>
-                        <td><a href="3联程服务.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/联程服务.png"><span>联程服务</span></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="4贵宾服务.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/贵宾服务.png"><span>贵宾服务</span></a></td>
-                        <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/机场陪同.png"><span>机场陪同</span></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/机场交通.png"><span>机场交通</span></a></td>
-                        <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/机场服务.png"><span>机场服务</span></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/商务飞行.png"><span>商务飞行</span></a></td>
-                        <td><a href="2快捷值机.html" data-refresh-ajax="true" data-foo="111"><img src="image/首页/人工服务.png"><span>人工服务</span></a></td>
-                    </tr>
-                </table>
             </div>
 
             <div class="panel" data-title="Favorites" id="foobar" data-include="2快捷值机.html">

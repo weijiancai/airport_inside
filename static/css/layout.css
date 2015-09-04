@@ -33,7 +33,7 @@ ul {
     margin: 0;
 }
 
-form {
+form, .normal_panel {
     margin: 10px;
     background: #fff;
     border: 1px solid #ccc;
@@ -96,6 +96,24 @@ form > div i.glyphicon {
     color: #666;
 }
 
+form textarea {
+    margin-right: 10px;
+}
+/* 内容 */
+.content {
+}
+
+.border_rb {
+    border-right: 1px inset #eee;
+    border-bottom: 1px inset #eee;
+}
+.border_b {
+    border-bottom: 1px inset #eee;
+}
+.border_r {
+    border-right: 1px inset #eee;
+}
+
 /* 头部 */
 .header {
     background-image: url("../image/bg_top.png");
@@ -105,7 +123,7 @@ form > div i.glyphicon {
     padding: 10px 5px;
     position: relative;
 }
-.header h1 {
+.header > h1 {
     position: absolute;
     top: 10px;
     left: 5px;
@@ -115,7 +133,7 @@ form > div i.glyphicon {
     line-height: 1;
     width: 100%;
 }
-.header h1 i {
+.header > h1 i {
     top: -7px;
     margin-left: 8px;
 }
@@ -125,7 +143,39 @@ form > div i.glyphicon {
     left: 15px;
     z-index: 9999;
 }
-
+.header .right {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.header img.right {
+    width: 35px;
+    height: 35px;
+}
+.header .tabs, .header .nav {
+    position: relative;
+    top: 55px;
+    text-align: center;
+}
+.header .tabs a {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #aaa;
+}
+.header .tabs a.active {
+    border-bottom: 5px solid #00bcd4;
+    color: #333;
+}
+.header .nav a {
+    font-weight: bold;
+    font-size: 19px;
+    color: #777;
+}
+.header .nav i {
+    margin-left: 10px;
+    font-size: 15px;
+}
 /* banner 图片 */
 #banner {
     position: relative;
@@ -274,4 +324,105 @@ footer a.pressed #icon_person {
 }
 #service_fee span {
 
+}
+/* ======================================= 机场交通 ==========================================================*/
+/* 大图 */
+.big_image {
+    padding: 15px 15px 0 15px;
+}
+.big_image img {
+    width: 100%;
+}
+/* 图片网格 */
+.grid_image {
+    width: 100%;
+}
+.grid_image img {
+    width: 70px;
+    height: 70px;
+}
+.grid_image td {
+    padding-top: 15px;
+    padding-right: 8px;
+    padding-left: 8px;
+    text-align: center;
+}
+.grid_image tr td:first-child {
+    padding-left: 7px;
+}
+.grid_image td div {
+    margin-top: 10px;
+    color: #333;
+    font-size: 15px;
+}
+/* ======================================= 餐厅 ==========================================================*/
+li.normal_panel {
+    padding: 10px;
+}
+li.normal_panel div > img {
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+}
+/* ======================================= 餐厅详情 ==========================================================*/
+#restaurant_detail .header .title {
+    padding: 15px;
+}
+
+#restaurant_detail .header .title div:first-child {
+    width: 80%;
+    border-right: 1px inset #ccc;
+    display: inline-block;
+}
+#restaurant_detail .header .title div:last-child {
+    display: inline-block;
+}
+#restaurant_detail .header .title  img {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+#restaurant_detail .normal_panel {
+    padding: 10px;
+}
+#restaurant_detail .normal_panel ul {
+    margin-top: 10px;
+}
+#restaurant_detail .normal_panel ul li {
+    position: relative;
+    min-height: 100px;
+}
+
+#restaurant_detail .normal_panel ul li img {
+    width: 100px;
+    height: 90px;
+    position: absolute;
+}
+#restaurant_detail .normal_panel ul li div {
+    position: absolute;
+    left: 110px;
+    top: 0;
+    right: 50px;
+    min-height: 90px;
+}
+#restaurant_detail .normal_panel ul li span {
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+#restaurant_detail .normal_panel ul li h3 {
+    font-size: 18px;
+    margin: 0;
+}
+#restaurant_detail .normal_panel ul li h5 {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+#restaurant_detail .normal_panel ul li h4 {
+    position: absolute;
+    left: 110px;
+    right: 0;
+    bottom: -5px;
+    border-bottom: 1px solid #ccc;
 }

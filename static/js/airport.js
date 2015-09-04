@@ -14,6 +14,21 @@ $(document).on('panelload', function(e) {
     if($(e.target).attr('id') == 'main') {
         $('footer').show();
     }
+    // 滚动
+    var $content = $(e.target).find('.content');
+    if($content.length > 0) {
+        new IScroll($content.get(0), {
+            mouseWheel: true,
+            scrollbars: true
+        });
+    }
+    console.log($content);
+});
+// tab
+$(document).on('click', 'div.tabs > a', function() {
+    var $this = $(this);
+    $this.parent().find('a').removeClass('active');
+    $this.addClass('active');
 });
 
 $(function() {
@@ -25,6 +40,10 @@ $(function() {
             $(this).find('td').css('border', 'none');
         }
     });
+
+
+    new IScroll('.content');
+
 
     // 选择餐饮
     $('#btnCatering').click(function() {

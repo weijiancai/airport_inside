@@ -1,7 +1,11 @@
-﻿<div class="header" style="padding: 0">
-    <img src="image/快捷值机/顶部背景.png" style="width: 100%;">
+﻿<div class="header" style="height: 110px;">
     <a class="goBack" href="#" onclick="$.afui.goBack()" style="margin-top: 5px;"><i class="fa fa-long-arrow-left"></i></a>
-    <h1 style="margin-top: 5px;">快捷值机</h1>
+    <h1 style="margin-top: 5px;">机场服务</h1>
+
+    <div class="flex tabs">
+        <a class="active">手动查询</a>
+        <a>上传登机牌</a>
+    </div>
 </div>
 
 <form id="form_checkIn">
@@ -27,29 +31,10 @@
         <i class="glyphicon glyphicon-calendar"></i>
     </div>
     <div>
-        <label>座位区域</label>
+        <label>投诉内容描述</label>
     </div>
     <div class="flex">
-        <select>
-            <option>前排</option>
-            <option>中间</option>
-            <option>后排</option>
-        </select>
-        <select>
-            <option>靠窗</option>
-            <option>走道</option>
-            <option>中间</option>
-        </select>
-        <select>
-            <option>靠左</option>
-            <option>中间</option>
-            <option>靠右</option>
-        </select>
-        <select>
-            <option>上层</option>
-            <option>中层</option>
-            <option>下层</option>
-        </select>
+        <textarea></textarea>
     </div>
 </form>
 
@@ -57,4 +42,4 @@
     服务费：<span>￥20</span>
 </div>
 
-<a href="#" class="btn btn-normal block">支付定金</a>
+<a href="#" class="btn btn-normal block">提交</a>
