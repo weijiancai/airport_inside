@@ -1,7 +1,3 @@
-$.afui.useOSThemes=false;
-$.afui.disableTabBar();
-$.afui.isAjaxApp=true;
-$.afui.loadDefaultHash=false;
 
 /*
 $.afui.registerDataDirective("[data-foo]",function(e){

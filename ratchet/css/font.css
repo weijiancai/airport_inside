@@ -1,0 +1,88 @@
+/* 头部 */
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+header h1 i {
+    font-size: 10px;
+}
+header .goBack i {
+    font-size: 30px;
+    color: #666;
+}
+/* 天气预报 */
+#weather {
+    color: #fff;
+}
+#weather span, #weather i.icon {
+    font-size: 36px;
+}
+#weather ul {
+    font-size: 18px;
+}
+/* 机场公告 */
+#notice td {
+    font-size: 20px;
+}
+#notice td:first-child {
+    color: #666;
+}
+#notice td:nth-child(2) {
+    color: #999;
+}
+/* 主菜单 */
+#main_menu a {
+    font-size: 22px;
+    color: #333;
+}
+/* ======================================= 快捷值机 ==========================================================*/
+#service_fee {
+    font-size: 15px;
+}
+#service_fee span {
+    font-size: 30px;
+    color: #00bcd4;
+}
+/* ======================================= 餐厅 ==========================================================*/
+li.normal_panel a {
+    color: #000;
+}
+li.normal_panel a > p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+}
+li.normal_panel a > p .pull-right {
+    font-size: 15px;
+}
+/* ======================================= 餐厅详情 ==========================================================*/
+#restaurant_detail header .title h1 {
+    font-size: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+#restaurant_detail header .title h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+}
+#restaurant_detail .normal_panel ul li h3 {
+    font-size: 18px;
+}
+#restaurant_detail .normal_panel ul li span {
+    font-size: 25px;
+    color: #ff4c6a;
+    text-align: right;
+}
+#restaurant_service .flex {
+    font-size: 18px;
+}
+/* ======================================= 套餐详情 ==========================================================*/
+#setDetail td {
+    border: 1px solid #ddd;
+    padding: 7px;
+    text-align: center;
+}
+#setTooltip dd {
+    color: #777;
+}
