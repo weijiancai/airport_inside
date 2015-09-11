@@ -102,6 +102,21 @@ form > div i.glyphicon {
     font-size: 15px;
     color: #666;
 }
+form .input-btn {
+    position: relative;
+}
+form .input-btn a.btn-normal {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+form .input-btn input {
+    position: absolute;
+    right: 130px;
+    left: 0;
+    top: 0;
+}
 
 form textarea {
     margin-right: 10px;
@@ -116,6 +131,18 @@ form textarea {
 }
 .border_r {
     border-right: 1px inset #eee;
+}
+
+.formTable {
+    font-size: 20px;
+    color: #000;
+}
+.formTable label {
+    color: #999;
+    font-size: 15px;
+}
+.formTable tr {
+    height: 40px;
 }
 
 /* 头部 */

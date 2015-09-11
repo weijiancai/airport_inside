@@ -35,11 +35,11 @@
     <h1>预约</h1>
 </header>
 
-<div class="content">
+<div class="content" id="content_booking">
     <div class="normal_panel p10">
-        <table>
+        <table class="formTable">
             <tr>
-                <td><label>商品名称</label></td>
+                <td style="width: 100px;"><label>商品名称</label></td>
                 <td><span>金釜山双人精品套餐</span></td>
             </tr>
             <tr>
@@ -52,12 +52,12 @@
             </tr>
             <tr>
                 <td><label>总价</label></td>
-                <td><span>￥82</span></td>
+                <td><span class="blue_00bcd4_f20">￥82</span></td>
             </tr>
         </table>
     </div>
 
-    <h1>免登陆直接购买 或 <span>登陆</span></h1>
+    <h1>免登陆直接购买 或 <span class="blue_00bcd4_f26">登陆</span></h1>
 
     <form>
         <div>
@@ -66,10 +66,12 @@
         </div>
         <div>
             <label for="identifying-code">验证码</label>
-            <div class="flex">
-                <input type="text" id="identifying-code" name="identifying-code" required aria-required="true">
-                <a href="#" class="btn btn-normal" style="width: 250px">获取验证码</a>
-            </div>
+            <table>
+                <tr>
+                    <td style="width: 40%"><input type="text" id="identifying-code" name="identifying-code" required aria-required="true"></td>
+                    <td><a href="#" class="btn btn-normal">获取验证码</a></td>
+                </tr>
+            </table>
         </div>
     </form>
 </div>
