@@ -178,28 +178,6 @@ footer>a.glyphicon:not(.button):before {
 table {
     width: 100%;
 }
-/* 通用按钮 */
-.btn-normal {
-    margin: 0 15px;
-    background-color: #00bcd4;
-    padding: 10px;
-    font-size: 18px;
-    color: #fff;
-}
-.btn-normal-small {
-    margin: 0 15px;
-    background-color: #00bcd4;
-    padding: 6px 20px;
-    font-size: 16px;
-    color: #fff;
-}
-.btn-green {
-    margin: 0 15px;
-    background-color: #4cff83;
-    padding: 10px;
-    font-size: 18px;
-    color: #fff;
-}
 
 /* 分类卡片 */
 .category_card {

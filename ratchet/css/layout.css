@@ -1,8 +1,15 @@
+@import "listview.css";
 /* 重写jqMobi样式 */
 .view > header {
     display: none !important;
 }
 
+.table-view-cell1 {
+    position: relative;
+    padding: 8px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
 .panel {
     padding: 0;
 }
@@ -32,8 +39,14 @@ ul {
     padding: 0;
     margin: 0;
 }
+select {
+    height: 35px;
+    padding: 0 0 0 5px;
+    text-align: center;
+}
 
 form, .normal_panel {
+    padding-top: 10px;
     margin: 10px;
     background: #fff;
     border: 1px solid #ccc;
@@ -45,6 +58,9 @@ form, .normal_panel {
     -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1);
     transform: translate(0px, 0px) translateZ(0px);
     position: relative;
+}
+.normal_panel {
+    padding: 10px;
 }
 form > div {
     display: -webkit-box;
@@ -76,7 +92,7 @@ form > div label {
     font-weight: bold;
     float: left;
 }
-form > div input[type="text"],form > div input[type="tel"] {
+form input[type="text"],form input[type="tel"], form input[type="password"], form input[type="email"] {
     -webkit-box-flex: 2;
     -moz-box-flex: 2 auto;
     -webkit-flex: 2 auto;
@@ -133,18 +149,58 @@ form textarea {
     border-right: 1px inset #eee;
 }
 
-.formTable {
+.formTable, .formTable1 {
     font-size: 20px;
     color: #000;
 }
-.formTable label {
-    color: #999;
+.formTable label, .formTable1 label{
     font-size: 15px;
+    margin-right: 8px;
 }
-.formTable tr {
+.formTable tr, .formTable1 tr {
     height: 40px;
 }
-
+.formTable1 label {
+    color: #999;
+}
+.formTable .toggle, .formTable1 .toggle  {
+    display: inline-block;
+    text-align: right;
+}
+.formTable td > a.btn {
+    margin: 0 0 10px 15px;
+    padding: 10px;
+}
+/* 通用按钮 */
+.btn-normal {
+    margin: 0 15px;
+    background-color: #00bcd4;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.btn-normal-small {
+    margin: 0 15px;
+    background-color: #00bcd4;
+    padding: 6px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.btn-green {
+    margin: 0 15px;
+    background-color: #4cff83;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.btn-verify-code {
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #00bcd4;
+    border: 1px solid #00bcd4;
+    font-weight: bold;
+}
 /* 头部 */
 header {
     background-image: url("../image/bg_top.png");
@@ -392,14 +448,19 @@ footer a.active #icon_person {
     color: #333;
     font-size: 15px;
 }
-/* ======================================= 餐厅 ==========================================================*/
-li.normal_panel {
-    padding: 10px;
+/* 描述信息 */
+.desc {
+    margin-top: 15px;
 }
-li.normal_panel div > img {
+.desc p {
+    margin: 0;
+}
+.desc p label {
     width: 100px;
-    height: 80px;
-    margin-right: 10px;
+    color: #000;
+}
+.desc dd {
+    color: #777;
 }
 /* ======================================= 餐厅详情 ==========================================================*/
 #restaurant_detail header .title {
@@ -422,47 +483,10 @@ li.normal_panel div > img {
 #restaurant_detail .normal_panel {
     padding: 10px;
 }
-#restaurant_detail .normal_panel ul {
-    margin-top: 10px;
-}
-#restaurant_detail .normal_panel ul li {
-    position: relative;
-    min-height: 100px;
+.normal_panel > ul {
+    margin-top: 15px;
 }
 
-#restaurant_menus ul li img {
-    width: 100px;
-    height: 90px;
-    position: absolute;
-}
-#restaurant_menus ul li div {
-    position: absolute;
-    left: 110px;
-    top: 0;
-    right: 50px;
-    min-height: 90px;
-}
-#restaurant_menus ul li span {
-    position: absolute;
-    top: 30px;
-    right: 0;
-}
-#restaurant_menus ul li h3 {
-    font-size: 18px;
-    margin: 0;
-}
-#restaurant_menus ul li h5 {
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-}
-#restaurant_menus ul li h4 {
-    position: absolute;
-    left: 110px;
-    right: 0;
-    bottom: -5px;
-    border-bottom: 1px solid #ccc;
-}
 .normal_panel a.btn-normal-small {
     margin-left: 0;
 }
@@ -487,4 +511,135 @@ li.normal_panel div > img {
 #restaurant_images img {
     width: 100%;
     margin: 10px 0 5px 0;
+}
+
+.planCards a {
+    margin: 0;
+    width: 30%;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    font-size: 17px;
+}
+.planCards a:first-child, .planCards a:nth-child(2) {
+    margin-right: 10px;
+}
+.planCards a.active {
+    background-color: #00bcd4;
+    color: #fff;
+}
+/* ======================================= 注册 ==========================================================*/
+#page_regist .normal_panel table img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#page_regist .normal_panel table td {
+    vertical-align: middle;
+}
+#page_regist .normal_panel table input {
+    margin: 8px;
+}
+#agreeProtocol {
+    width: 100%;
+    display: block;
+}
+#agreeProtocol span {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url("../image/regist/注册/选择2.png");
+}
+#agreeProtocol span.active {
+    background-image: url("../image/regist/注册/选择.png");
+}
+/* ======================================= 登陆 ==========================================================*/
+.backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#page_login {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+.logo {
+    position: relative;
+    top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.logo img {
+    width: 120px;
+    height: 120px;
+}
+#page_login form {
+    position: relative;
+    top: 60px;
+    border: none;
+    margin-right: 70px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #333;
+    background: none;;
+}
+#page_login form img {
+    margin-right: 15px;
+    width: 36px;
+    height: 36px;
+}
+#page_login form input {
+    border-bottom: 1px solid #333;
+}
+#forgetPassword {
+    text-align: right;
+    display: block;
+    color: #00bcd4;
+}
+#page_login .bottom {
+    position: absolute;
+    bottom: 70px;
+    text-align: center;
+    width: 100%;
+    padding: 30px 50px 0 30px;
+}
+#page_login .bottom a {
+    position: relative;
+    height: 60px;
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 24px;
+}
+#page_login .bottom a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#page_login .bottom a span {
+    position: relative;
+    top: 15px;
+}
+#btnLogin {
+    color: #fff;
+}
+#btnRegist {
+    margin-top: 10px;
+    color: #00bcd4;
+}
+/* ======================================= 人工服务 ==========================================================*/
+#page_artificialService ul img {
+    width: 64px;
+    height: 64px;
 }

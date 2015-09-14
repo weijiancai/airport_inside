@@ -32,34 +32,49 @@
 <body>
 
 <header>
-    <a class="goBack" href="1首页.html" style="margin-top: 5px;"><i class="fa fa-long-arrow-left"></i></a>
-
-    <h1 style="margin-top: 5px;">机场交通</h1>
-    <img class="right" src="image/机场交通/说明图标.png">
+    <a class="goBack" href="7-3-3_restaurant_set.html" style="margin-top: 5px;"><i class="fa fa-long-arrow-left"></i></a>
+    <h1>预约</h1>
 </header>
 
-<div class="content">
-    <div>
-        <div class="big_image">
-            <img src="image/机场交通/接机.png"/>
-            <img src="image/机场交通/送机.png" style="margin-top: 10px;"/>
-        </div>
-
-        <table class="grid_image">
+<div class="content" id="content_booking">
+    <div class="normal_panel p10">
+        <table class="formTable">
             <tr>
-                <td><img src="image/机场交通/机场大巴.png"><div>机场大巴</div></td>
-                <td><img src="image/机场交通/出租车.png"><div>出租车</div></td>
-                <td><img src="image/机场交通/机场快轨.png"><div>机场快轨</div></td>
-                <td><img src="image/机场交通/机场公交.png"><div>机场公交</div></td>
+                <td style="width: 100px;"><label>商品名称</label></td>
+                <td><span>金釜山双人精品套餐</span></td>
             </tr>
             <tr>
-                <td><img src="image/机场交通/机场租车.png"><div>机场租车</div></td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td><label>单价</label></td>
+                <td><span>￥82</span></td>
+            </tr>
+            <tr>
+                <td><label>数量</label></td>
+                <td><input type="number" id="quantity" name="quantity" readonly value="1"></td>
+            </tr>
+            <tr>
+                <td><label>总价</label></td>
+                <td><span class="blue_00bcd4_f20">￥82</span></td>
             </tr>
         </table>
     </div>
+
+    <h1>免登陆直接购买 或 <span class="blue_00bcd4_f26">登陆</span></h1>
+
+    <form>
+        <div>
+            <label for="mobile-num">手机号</label>
+            <input type="text" id="mobile-num" name="mobile-num">
+        </div>
+        <div>
+            <label for="identifying-code">验证码</label>
+            <table>
+                <tr>
+                    <td style="width: 40%"><input type="text" id="identifying-code" name="identifying-code" required aria-required="true"></td>
+                    <td><a href="#" class="btn btn-normal">获取验证码</a></td>
+                </tr>
+            </table>
+        </div>
+    </form>
 </div>
 
 </body>

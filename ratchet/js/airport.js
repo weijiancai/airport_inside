@@ -26,6 +26,21 @@ $(document).on('click', 'div.tabs > a', function() {
     var $this = $(this);
     $this.parent().find('a').removeClass('active');
     $this.addClass('active');
+    // 隐藏target
+    $this.parent().find('a').each(function() {
+        var target = $(this).data('target');
+        if(target) {
+            if(target == $this.data('target')) {
+                $('#' + target).show();
+            } else {
+                $('#' + target).hide();
+            }
+        }
+    });
+});
+// 同意服务协议
+$(document).on('click', 'a#agreeProtocol', function() {
+    $(this).find('span').toggleClass('active');
 });
 
 function scroller(wrap) {

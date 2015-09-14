@@ -62,17 +62,9 @@ li.normal_panel a > p .pull-right {
     text-align: left;
 }
 #restaurant_detail header .title h3 {
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 10px;
     text-align: left;
-}
-#restaurant_detail .normal_panel ul li h3 {
-    font-size: 18px;
-}
-#restaurant_detail .normal_panel ul li span {
-    font-size: 25px;
-    color: #ff4c6a;
-    text-align: right;
 }
 #restaurant_service .flex {
     font-size: 18px;
