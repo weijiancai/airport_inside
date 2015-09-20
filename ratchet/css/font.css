@@ -1,6 +1,6 @@
 /* 头部 */
 header h1 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
 }
 header h1 i {
@@ -81,4 +81,9 @@ li.normal_panel a > p .pull-right {
 #content_booking h1 {
     text-align: center;
     font-size: 26px;
+}
+/* ======================================= 机场导航 ==========================================================*/
+#page_airport_nav  h1 {
+    font-size: 25px;
+    color: #00bcd4;
 }

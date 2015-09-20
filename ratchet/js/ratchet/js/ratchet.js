@@ -44,7 +44,11 @@
       if (modal && modal.classList.contains('modal')) {
         modal.classList.toggle('active');
       }
-      event.preventDefault(); // prevents rewriting url (apps can still use hash values in url)
+        if(event.srcElement.hash && event.srcElement.hash.charAt(0) == '#') {
+
+        } else {
+            event.preventDefault(); // prevents rewriting url (apps can still use hash values in url)
+        }
     }
   });
 }());

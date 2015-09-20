@@ -133,9 +133,29 @@ form .input-btn input {
     left: 0;
     top: 0;
 }
-
 form textarea {
     margin-right: 10px;
+}
+
+.input-group {
+    width: auto;
+}
+.input-group .input-group-addon .fa:before {
+    top: 4px;
+}
+td .input-group .input-group-addon {
+    padding: 0 12px;
+}
+td .input-group .input-group-addon .fa:before {
+    top: 0;
+}
+.input-group input {
+    border: none;
+}
+.input-group label {
+    width: 80px;
+    padding: 8px 0 0 5px;
+    text-align: center;
 }
 
 .border_rb {
@@ -175,7 +195,7 @@ form textarea {
 .btn-normal {
     margin: 0 15px;
     background-color: #00bcd4;
-    padding: 10px;
+    padding: 15px 10px;
     font-size: 18px;
     color: #fff;
 }
@@ -241,9 +261,10 @@ header img.right {
     height: 35px;
 }
 header .tabs, header .nav {
-    position: relative;
-    top: 55px;
+    position: absolute;
+    top: 70px;
     text-align: center;
+    width: 100%;
 }
 header .tabs a {
     padding-bottom: 15px;
@@ -268,6 +289,7 @@ header .nav i {
 .content {
     top: 50px;
     padding-bottom: 20px;
+    background:rgba(238,238,238,255);
 }
 /* banner 图片 */
 #banner {
@@ -436,12 +458,13 @@ footer a.active #icon_person {
 }
 .grid_image td {
     padding-top: 15px;
-    padding-right: 8px;
-    padding-left: 8px;
+    /*padding-right: 8px;*/
+    /*padding-left: 8px;*/
     text-align: center;
+    width: 25%;
 }
 .grid_image tr td:first-child {
-    padding-left: 7px;
+    /*padding-left: 7px;*/
 }
 .grid_image td div {
     margin-top: 10px;
@@ -642,4 +665,164 @@ footer a.active #icon_person {
 #page_artificialService ul img {
     width: 64px;
     height: 64px;
+}
+/* ======================================= 机场导航 ==========================================================*/
+#page_airport_nav > div {
+    width: 250px;
+    margin: 80px auto 0 auto;
+}
+#page_airport_nav a {
+    height: 80px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 25px;
+}
+#page_airport_nav_terminal > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#loungeFacilities img, #serviceFacilities img{
+    width: 40px;
+    height: 40px;
+}
+#loungeFacilities, #serviceFacilities {
+    background-color: #fff;
+}
+#page_airport_switch ul, #page_airport_switch ol {
+    margin-right: 35px;
+}
+#page_airport_switch ul a {
+    border-top: 1px solid #ccc;
+    margin-left: 15px;
+    display: block;
+}
+#page_airport_switch ul .divider {
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    background-color: #fafafa;
+}
+#page_airport_switch ul .divider a{
+    border: none;
+    color: #999;
+}
+#page_airport_switch ul .cell {
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
+    background-color: #dfe0e2;
+}
+#page_airport_switch ul .cell a {
+    color: #333;
+}
+#page_airport_switch #letterTable {
+    position: fixed;
+    right: 0;
+    top: 120px;
+    bottom: 10px;
+    display: inline-block;
+    width: 35px;
+    overflow: scroll;
+}
+#page_airport_switch table td a {
+    display: block;
+    text-align: center;
+    width: 35px;
+    font-size: 18px;
+    padding: 2px 0;
+    color: #333;
+}
+/* ======================================= 航班动态 ==========================================================*/
+#scanCheckIn {
+    border: 1px solid #00bcd4;
+    text-align: center;
+    color: #00bcd4;
+    font-weight: bold;
+    font-size: 16px;
+}
+#hbh, #scanCheckIn {
+    height: 45px;
+}
+#hbh {
+    padding-top: 5px;
+}
+#page_hbdt {
+    background:rgba(238,238,238,255);
+}
+#page_hbdt > .normal_panel {
+    border: none;
+    background-color: #fff;
+}
+#page_hbdt h1 {
+    font-size: 20px;
+    color: #444;
+    margin: 20px 0 10px 15px;
+}
+#page_hbdt ul.history li {
+    line-height: 50px;
+    font-size: 22px;
+    color: #999;
+    text-align: center;
+}
+.travel_list li {
+    position: relative;
+}
+.travel_list li .left {
+    position: absolute;
+    left: 0;
+    right: 40px;
+    top: 0;
+}
+.travel_list li .left > div:first-child {
+    height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.travel_list .right {
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    width: 40px;
+    text-align: center;
+}
+.travel_list .right span {
+    margin-left: 10px;
+}
+.travel_list span {
+    display: inline-block;
+}
+.travel_list .airline-icon {
+    width: 30px;
+    text-align: center;
+}
+.travel_list .airline-icon img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+.travel_list .name {
+    color: #666;
+    font-size: 20px;
+}
+.travel_list .code {
+    color: #111;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.travel_list .terminal {
+    font-size: 16px;
+    background-color: #0aa9dc;
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff;
+}
+.travel_list .time {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+.state_flying {
+    color: #00bcd4;
 }

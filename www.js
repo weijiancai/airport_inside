@@ -29,7 +29,7 @@ var mine = {
 var server = http.createServer(function (request, response) {
     var pathname = decodeURI(url.parse(request.url).pathname);
     if(pathname == '/') {
-        pathname = '1首页.html';
+        pathname = '1_index.html';
     }
     var realPath = path.join("ratchet", pathname);
     console.log(realPath);
