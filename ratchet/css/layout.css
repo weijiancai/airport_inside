@@ -768,21 +768,16 @@ footer a.active #icon_person {
 }
 .travel_list li {
     position: relative;
+    min-height: 130px;
 }
-.travel_list li .left {
-    position: absolute;
-    left: 0;
-    right: 40px;
-    top: 0;
+.travel_list tr {
+    height: 30px;
 }
-.travel_list li .left > div:first-child {
+.travel_list li .normal_panel > div:first-child {
     height: 35px;
     border-bottom: 1px solid #ccc;
 }
 .travel_list .right {
-    position: absolute;
-    right: 5px;
-    top: 50px;
     width: 40px;
     text-align: center;
 }
@@ -791,6 +786,9 @@ footer a.active #icon_person {
 }
 .travel_list span {
     display: inline-block;
+}
+.travel_list .normal_panel {
+    margin-right: 0;
 }
 .travel_list .airline-icon {
     width: 30px;
@@ -817,12 +815,82 @@ footer a.active #icon_person {
     border-radius: 50%;
     padding: 5px;
     color: #fff;
+    margin-top: 10px;
 }
-.travel_list .time {
+.travel_list .time1, .travel_list .time2 {
     font-size: 18px;
     color: #000;
+}
+.travel_list .time1 {
+    text-align: left;
+}
+.travel_list .time2 {
+    text-align: right;
+    margin-left: 3px;
+}
+.travel_list .airport {
+    color: #999;
+}
+.travel_list .change {
+    color: #66ff99;
+}
+.travel_list .real {
+    text-align: center;
+    background-color: #66ff99;
+    color: #000;
+    padding: 2px 20px;
+    border-radius: 100px;
+    margin-top: 3px;
+}
+.travel_list .left_circle i:first-child {
+    border: 2px solid #999;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.travel_list .left_circle i:last-child {
+    border-top: 2px solid #999;
+    width: 20px;
+    height: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.travel_list .left_circle {
+    margin-left: 5px;
+}
+.travel_list .right_circle {
+    margin-right: 5px;
+}
+.travel_list .right_circle i:last-child {
+    border: 2px solid #999;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.travel_list .right_circle i:first-child {
+    border-top: 2px solid #999;
+    width: 20px;
+    height: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.travel_list tr .airport:last-child {
+    text-align: right;
+}
+.state_arrive, .state_delay, .state_flying, .state_cancel {
     text-align: center;
 }
 .state_flying {
     color: #00bcd4;
+}
+.state_delay {
+    color: #d4cd00;
+}
+.state_arrive {
+    color: #3193f5;
+}
+.state_cancel {
+    color: #d40023;
 }
