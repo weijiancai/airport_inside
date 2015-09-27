@@ -42,50 +42,16 @@ $(document).on('click', 'div.tabs > a', function() {
 $(document).on('click', 'a#agreeProtocol', function() {
     $(this).find('span').toggleClass('active');
 });
+// 日历
+$(document).on('push', function() {
 
-function scroller(wrap) {
-    var $content = $(wrap).find('.content');
-    if($content.length > 0) {
-        $content.each(function() {
-            var isScroll = $(this).data('scroller');
-            if(isScroll && isScroll == 'T') {
-                return;
-            }
-            console.log('scroller');
-            console.log(this);
-            new IScroll(this);
-            $(this).data('scroller', 'T');
-        });
-    }
-}
-
-$(function() {
-    // 滚动
-    //scroller(document);
-
-    // 分类卡片,只有一行时，去掉border
-    var $categoryCard = $('.category_card');
-    console.log($categoryCard.find('tr').length);
-    $categoryCard.each(function() {
-        if($(this).find('tr').length == 1) {
-            $(this).find('td').css('border', 'none');
-        }
+});
+window.addEventListener('push', function() {
+    $('script').each(function() {
+        eval(this.innerHTML);
     });
-
-
-    // 选择餐饮
-    $('#btnCatering').click(function() {
-        $(this).addClass('pressed');
-        $('#btnHotel').removeClass('pressed');
-        $('#cateringList').show();
-        $('#hotelList').hide();
-    });
-    // 选择酒店
-    $('#btnHotel').click(function() {
-//        $(this).addClass('pressed');
-        $('#btnCatering').removeClass('pressed');
-        $(this).toggleClass('pressed');
-        $('#cateringList').hide();
-        $('#hotelList').show();
-    });
+    /*var scriptsList = document.querySelectorAll('script.js-custom');
+    for (var i = 0; i < scriptsList.length; ++i) {
+        eval(scriptsList[i].innerHTML);
+    }*/
 });

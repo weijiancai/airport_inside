@@ -1,3 +1,6 @@
+body {
+    font-size: 13px;
+}
 /*
  * 修正样式，使bootstrap和jqmobi样式兼容
  */
@@ -60,6 +63,9 @@ a:hover, a:focus {
 .f18 {
     font-size: 18px;
 }
+.f22 {
+    font-size: 22px;
+}
 .write_32 {
     font-size: 32px;
     color: white;
@@ -70,14 +76,26 @@ a:hover, a:focus {
     color: white;
 }
 
+.p5 {
+    padding: 5px;
+}
 .p10 {
     padding: 10px;
+}
+.p15 {
+    padding: 15px;
 }
 .pl5 {
     padding-left: 5px;
 }
+.pb15 {
+    padding-bottom: 15px;
+}
 .pl20 {
     padding-left: 20px;
+}
+.pr10 {
+    padding-right: 10px;
 }
 .pr18 {
     padding-right: 18px;
@@ -126,4 +144,59 @@ a:hover, a:focus {
 }
 .ml0 {
     margin-left: 0;
+}
+
+.dotted_gray {
+    border-top: 2px dashed #888;
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    margin: 0 5px;
+}
+.circle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border: 1px solid #66ff99;
+    margin-top: -4px;
+    background-color: #66ff99;
+}
+.circle_right {
+    right: 16px;
+    background-color: #fff;
+    border-color: #777;
+}
+
+/* 进度条 */
+.progress_fly {
+    height: 8px;
+    background-color: #777;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+.progress-bar-cyan {
+    background-color: #66ff99;
+}
+/* fieldset dashed */
+.fieldset_dashed {
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    border: 2px dashed #777;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.fieldset_dashed legend {
+    width: auto;
+    padding: 0 8px;
+}
+.number_time {
+    padding: 8px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 5px;
 }

@@ -32,14 +32,142 @@
 <body>
 
 <header>
-    <a class="goBack" href="10-1_airport_nav.html"><i class="fa fa-long-arrow-left"></i></a>
+    <a class="goBack" href="11-4_hbdt_travel.html"><i class="fa fa-long-arrow-left"></i></a>
     <h1>航班详情</h1>
 </header>
 
 <div class="content" id="page_hbdt_detail">
-    <table>
-        <tr></tr>
-    </table>
+    <div class="p15">
+        <table class="text-center">
+            <tr style="height: 35px;">
+                <td style="width: 100px;" class="f22">HRB</td>
+                <td>
+                    <span class="dotted_gray"></span><b class="btn btn-positive btn-outlined">经停</b><span class="dotted_gray"></span>
+                </td>
+                <td style="width: 100px;" class="f22">CSX</td>
+            </tr>
+            <tr>
+                <td class="text-muted">哈尔滨太平</td>
+                <td class="text-success">南京渌口</td>
+                <td class="text-muted">长沙黄花</td>
+            </tr>
+        </table>
+        <div class="progress progress_fly mt15">
+            <span class="circle"></span>
+            <div class="progress-bar progress-bar-cyan" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                <span class="sr-only">40% Complete (success)</span><span></span>
+            </div>
+            <span class="circle circle_right"></span>
+        </div>
+        <p>实际飞行3小时27分钟（2378km）</p>
+
+        <fieldset class="fieldset_dashed">
+            <legend>航班起飞时间</legend>
+            <div class="pull-left">
+                <span class="number_time">0</span>
+                <span class="number_time">8</span>
+                <span class="bold_20">:</span>
+                <span class="number_time">5</span>
+                <span class="number_time">4</span>
+            </div>
+            <div class="pull-right pr10" style="margin-top: -10px;">
+                <div class="f18">倒计时：</div>
+                <div class="f18 mt5" style="color: #0aa9dc">00:00:00</div>
+            </div>
+        </fieldset>
+    </div>
+
+    <ul class="table-view fly">
+        <li class="table-view-cell">
+            <a class="navigate-right" href="11-6_flight_resume.html">
+                <span class="f22">MF1991</span>厦门航空（A320-232 机龄4年）
+                <p class="mt5">实际承运 CZ6277</p>
+            </a>
+        </li>
+    </ul>
+
+    <div class="p15">
+        <ul>
+            <li>
+                <div class="normal_panel">
+                    <div><img src="image/phone.png"><span class="gray_888 pr18">哈尔滨太平</span><span>计划 07/14 08:55</span></div>
+                    <div class="flex">
+                        <ul>
+                            <li>08:54</li>
+                            <li>实际起飞</li>
+                        </ul>
+                        <ul>
+                            <li>T1</li>
+                            <li>航站楼</li>
+                        </ul>
+                        <ul>
+                            <li>1</li>
+                            <li>登机口</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="normal_panel">
+                    <div><img src="image/phone.png"><span class="gray_888 pr18">南京禄口</span><span>计划 07/14 08:55</span></div>
+                    <div class="flex">
+                        <ul>
+                            <li>12:21</li>
+                            <li>实际起飞</li>
+                        </ul>
+                        <ul>
+                            <li>09</li>
+                            <li>行李转盘</li>
+                        </ul>
+                        <ul>
+                            <li>11</li>
+                            <li>到达口</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="normal_panel">
+                    <div><img src="image/phone.png"><span class="gray_888 pr18">南京禄口</span><span>计划 07/14 08:55</span></div>
+                    <div class="flex">
+                        <ul>
+                            <li>13:36</li>
+                            <li>实际起飞</li>
+                        </ul>
+                        <ul>
+                            <li>2</li>
+                            <li>行李转盘</li>
+                        </ul>
+                        <ul>
+                            <li>11</li>
+                            <li>登记口</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="normal_panel">
+                    <div><img src="image/phone.png"><span class="gray_888 pr18">南京禄口</span><span>计划 07/14 08:55</span></div>
+                    <div class="flex">
+                        <ul>
+                            <li>14:40</li>
+                            <li>实际起飞</li>
+                        </ul>
+                        <ul>
+                            <li>12</li>
+                            <li>行李转盘</li>
+                        </ul>
+                        <ul>
+                            <li>08</li>
+                            <li>到达口</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <a class="btn btn-normal block">+ 关注</a>
 </div>
 </body>
 </html>
