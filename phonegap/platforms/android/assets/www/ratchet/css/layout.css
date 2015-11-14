@@ -1,0 +1,1310 @@
+@import "listview.css";
+/* 重写jqMobi样式 */
+.view > header {
+    display: none !important;
+}
+
+.table-view-cell1 {
+    position: relative;
+    padding: 8px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+.panel {
+    padding: 0;
+}
+
+.bar-tab .tab-item .icon~.tab-label {
+    font-size: 10px;
+}
+.bar-tab .tab-item .icon {
+    height: 28px;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex > * {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+select {
+    height: 35px;
+    padding: 0 0 0 5px;
+    text-align: center;
+}
+
+form, .normal_panel {
+    padding-top: 10px;
+    margin: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1);
+    transform: translate(0px, 0px) translateZ(0px);
+    position: relative;
+}
+.normal_panel {
+    padding: 10px;
+}
+form > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 5px 0 0;
+    position: relative;
+}
+form > div label {
+    text-align: left;
+    width: 100px;
+    padding: 15px 0 15px 18px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    float: left;
+}
+form input[type="text"],form input[type="tel"], form input[type="password"], form input[type="email"] {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2 auto;
+    -webkit-flex: 2 auto;
+    -ms-flex: 2 auto;
+    flex: 2 auto;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+
+    width: 100%;
+}
+form > div i.glyphicon {
+    right: 20px;
+    top: 10px;
+    font-size: 15px;
+    color: #666;
+}
+form .input-btn {
+    position: relative;
+}
+form .input-btn a.btn-normal {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+form .input-btn input {
+    position: absolute;
+    right: 130px;
+    left: 0;
+    top: 0;
+}
+form textarea {
+    margin-right: 10px;
+}
+
+.input-group {
+    width: auto;
+}
+.input-group .input-group-addon .fa:before {
+    top: 4px;
+}
+td .input-group .input-group-addon {
+    padding: 0 12px;
+}
+td .input-group .input-group-addon .fa:before {
+    top: 0;
+}
+.input-group input {
+    border: none;
+}
+.input-group label {
+    width: 80px;
+    padding: 8px 0 0 5px;
+    text-align: center;
+}
+
+.border_rb {
+    border-right: 1px inset #eee;
+    border-bottom: 1px inset #eee;
+}
+.border_b {
+    border-bottom: 1px inset #eee;
+}
+.border_r {
+    border-right: 1px inset #eee;
+}
+
+.formTable, .formTable1 {
+    font-size: 20px;
+    color: #000;
+}
+.formTable label, .formTable1 label{
+    font-size: 15px;
+    margin-right: 8px;
+}
+.formTable tr, .formTable1 tr {
+    height: 40px;
+}
+.formTable1 label {
+    color: #999;
+}
+.formTable .toggle, .formTable1 .toggle  {
+    display: inline-block;
+    text-align: right;
+}
+.formTable td {
+    position: relative;
+}
+.formTable td > a.btn {
+    margin: 0 0 10px 15px;
+    padding: 10px;
+}
+.formTable td > i.glyphicon {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    margin-top: 5px;
+}
+/* 通用按钮 */
+.btn-normal {
+    margin: 0 15px;
+    background-color: #00bcd4;
+    padding: 15px 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.btn-normal-small {
+    margin: 0 15px;
+    background-color: #00bcd4;
+    padding: 6px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.btn-green {
+    margin: 0 15px;
+    background-color: #4cff83;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.btn-verify-code {
+    margin: 0 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #00bcd4;
+    border: 1px solid #00bcd4;
+    font-weight: bold;
+}
+.btn-gray {
+    color: #fff;
+    background-color: #777;
+    border-color: #ccc;
+}
+/* 头部 */
+header {
+    background-image: url("../image/bg_top.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 50px;
+    padding: 10px 5px;
+    position: absolute;
+    width: 100%;
+}
+header > h1 {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    width: 100%;
+}
+header > h1 i.glyphicon {
+    top: -3px;
+    margin-left: 8px;
+}
+header .goBack {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 9999;
+}
+header .right {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+header img.right {
+    width: 35px;
+    height: 35px;
+}
+header .tabs, header .nav {
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    width: 100%;
+}
+header .tabs a {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #aaa;
+}
+header .tabs a.active {
+    border-bottom: 5px solid #00bcd4;
+    color: #333;
+}
+header .nav a {
+    font-weight: bold;
+    font-size: 19px;
+    color: #777;
+}
+header .nav i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+/* 内容 */
+.content {
+    top: 50px;
+    padding-bottom: 20px;
+    background: #f5f5f5;
+}
+/* banner 图片 */
+#banner {
+    position: relative;
+}
+#banner img {
+    height: 168px;
+    width: 100%
+}
+/* 天气预报 */
+#weather {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+}
+#weather div, #weather ul {
+    display: inline-block;
+}
+#weather .icon {
+    margin-right: 10px;
+}
+#weather ul {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+/* 机场公告 */
+#notice {
+    margin-top:5px;
+    height: 30px;
+    /*margin-left: 10px;*/
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+#notice td:first-child {
+    width: 80px;
+    text-align: center;
+}
+#notice td:nth-child(2) {
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}
+#notice td:last-child {
+    width: 45px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+/* 主菜单 */
+#main_menu {
+    border-collapse:separate;
+    border-spacing:10px 10px;
+}
+#main_menu td {
+    height: 64px;
+    width: 160px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1);
+    transform: translate(0px, 0px) translateZ(0px);
+    padding: 0 15px;
+}
+#main_menu a {
+    /*display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;*/
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#main_menu a img {
+    width: 28px;
+    /*height: 29px;*/
+}
+#main_menu a span {
+    float: right;
+    font-size: 18px;
+    margin-top: 5px;
+}
+/* 底部 */
+footer a {
+    text-align: center;
+}
+#icon_main, #icon_nav, #icon_state, #icon_mall, #icon_person {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 0;
+    width: 28px;
+    /*height: 25px;*/
+    margin: auto auto 2px;
+    background-size: cover;
+}
+#icon_main {
+    background-image: url("../image/首页/首页2.png");
+}
+footer a.active #icon_main {
+    background-image: url("../image/首页/首页1.png");
+}
+#icon_nav {
+    background-image: url("../image/首页/机场导航2.png");
+}
+footer a.active #icon_nav {
+    background-image: url("../image/首页/机场导航.png");
+}
+#icon_state {
+    background-image: url("../image/首页/航班动态2.png");
+}
+footer a.active #icon_state {
+    background-image: url("../image/首页/航班动态.png");
+}
+#icon_mall {
+    background-image: url("../image/首页/机场商城2.png");
+}
+footer a.active #icon_mall {
+    background-image: url("../image/首页/机场商城.png");
+}
+#icon_person {
+    background-image: url("../image/首页/个人中心2.png");
+}
+footer a.active #icon_person {
+    background-image: url("../image/首页/个人中心.png");
+}
+
+/* ======================================= 快捷值机 ==========================================================*/
+#form_checkIn .flex {
+    margin: -10px 0 18px 18px;
+}
+#form_checkIn select:after {
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    margin: auto auto 5px;
+    background-size: cover;
+    content: "\e252";
+}
+#form_checkIn select:first-child, #form_checkIn select:nth-child(2), #form_checkIn select:nth-child(3) {
+    margin-right: 10px;
+}
+#service_fee {
+    text-align: right;
+    padding: 10px 30px 15px 0;
+}
+#service_fee span {
+
+}
+/* ======================================= 机场交通 ==========================================================*/
+/* 大图 */
+.big_image {
+    padding: 15px 8px 0 8px;
+}
+.big_image img {
+    width: 100%;
+}
+/* 图片网格 */
+.grid_image {
+    width: 100%;
+}
+.grid_image img {
+    width: 70px;
+    height: 70px;
+}
+.grid_image td {
+    padding-top: 15px;
+    /*padding-right: 8px;*/
+    /*padding-left: 8px;*/
+    text-align: center;
+    /*width: 25%;*/
+}
+.grid_image tr td:first-child {
+    /*padding-left: 7px;*/
+}
+.grid_image td div {
+    margin-top: 10px;
+    color: #333;
+    font-size: 15px;
+}
+.img50 img {
+    width: 50px;
+    height: 50px;
+}
+/* 描述信息 */
+.desc {
+    margin-top: 15px;
+}
+.desc p {
+    margin: 0;
+}
+.desc p label {
+    width: 100px;
+    color: #000;
+}
+.desc dd {
+    color: #777;
+}
+/* ======================================= 餐厅详情 ==========================================================*/
+#restaurant_detail header .title {
+    padding: 15px 15px 0 0;
+}
+
+#restaurant_detail header .title div:first-child {
+    width: 80%;
+    border-right: 1px inset #ccc;
+    display: inline-block;
+}
+#restaurant_detail header .title div:last-child {
+    display: inline-block;
+}
+#restaurant_detail header .title  img {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+#restaurant_detail .normal_panel {
+    padding: 10px;
+}
+.normal_panel > ul {
+    margin-top: 15px;
+}
+
+.normal_panel a.btn-normal-small {
+    margin-left: 0;
+}
+.person_icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+#restaurant_comment .table-view-cell {
+    padding-left: 0;
+    padding-right: 0;
+}
+#restaurant_comment ul {
+    border-top: none;
+}
+#restaurant_comment h4 {
+    text-align: center;
+}
+#setTooltip dd {
+    margin: 5px 0;
+}
+#restaurant_images img {
+    width: 100%;
+    margin: 10px 0 5px 0;
+}
+
+.planCards a {
+    margin: 0;
+    width: 30%;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    font-size: 17px;
+}
+.planCards a:first-child, .planCards a:nth-child(2) {
+    margin-right: 10px;
+}
+.planCards a.active {
+    background-color: #00bcd4;
+    color: #fff;
+}
+/* ======================================= 注册 ==========================================================*/
+#page_regist .normal_panel table img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#page_regist .normal_panel table td {
+    vertical-align: middle;
+}
+#page_regist .normal_panel table input {
+    margin: 8px;
+}
+#agreeProtocol {
+    width: 100%;
+    display: block;
+}
+#agreeProtocol span {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url("../image/regist/注册/选择2.png");
+}
+#agreeProtocol span.active {
+    background-image: url("../image/regist/注册/选择.png");
+}
+/* ======================================= 登陆 ==========================================================*/
+.backgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#page_login {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+.logo {
+    position: relative;
+    top: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.logo img {
+    width: 120px;
+    height: 120px;
+}
+#page_login form {
+    position: relative;
+    top: 60px;
+    border: none;
+    margin-right: 70px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #333;
+    background: none;;
+}
+#page_login form img {
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+#page_login form input {
+    border-bottom: 1px solid #333;
+}
+#page_login form > div label {
+    padding-bottom: 0px;
+}
+#forgetPassword {
+    text-align: right;
+    display: block;
+    color: #00bcd4;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+#page_login .bottom {
+    position: absolute;
+    bottom: 70px;
+    text-align: center;
+    width: 100%;
+    padding: 30px 50px 0 30px;
+}
+#page_login .bottom a {
+    position: relative;
+    height: 50px;
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+#page_login .bottom a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#page_login .bottom a span {
+    position: relative;
+    top: 15px;
+}
+#btnLogin {
+    color: #fff;
+}
+#btnRegist {
+    margin-top: 10px;
+    color: #00bcd4;
+}
+/* ======================================= 人工服务 ==========================================================*/
+#page_artificialService ul img {
+    width: 64px;
+    height: 64px;
+}
+/* ======================================= 机场导航 ==========================================================*/
+#page_airport_nav > div {
+    width: 250px;
+    margin: 80px auto 0 auto;
+}
+#page_airport_nav a {
+    height: 80px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 25px;
+}
+#page_airport_nav_terminal > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#loungeFacilities img, #serviceFacilities img{
+    width: 40px;
+    height: 40px;
+}
+#loungeFacilities, #serviceFacilities {
+    background-color: #fff;
+}
+#page_airport_switch ul, #page_airport_switch ol {
+    margin-right: 35px;
+}
+#page_airport_switch ul a {
+    border-top: 1px solid #ccc;
+    margin-left: 15px;
+    display: block;
+}
+#page_airport_switch ul .divider {
+    height: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    background-color: #fafafa;
+}
+#page_airport_switch ul .divider a{
+    border: none;
+    color: #999;
+}
+#page_airport_switch ul .cell {
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
+    background-color: #dfe0e2;
+}
+#page_airport_switch ul .cell a {
+    color: #333;
+}
+#page_airport_switch #letterTable {
+    position: fixed;
+    right: 0;
+    top: 120px;
+    bottom: 10px;
+    display: inline-block;
+    width: 35px;
+    overflow: scroll;
+}
+#page_airport_switch table td a {
+    display: block;
+    text-align: center;
+    width: 35px;
+    font-size: 18px;
+    padding: 2px 0;
+    color: #333;
+}
+/* ======================================= 航班动态 ==========================================================*/
+#scanCheckIn {
+    border: 1px solid #00bcd4;
+    text-align: center;
+    color: #00bcd4;
+    font-weight: bold;
+    font-size: 16px;
+}
+#hbh, #scanCheckIn {
+    height: 45px;
+}
+#hbh {
+    padding-top: 5px;
+}
+#page_hbdt {
+    background:rgba(238,238,238,255);
+}
+#page_hbdt > .normal_panel {
+    border: none;
+    background-color: #fff;
+}
+#page_hbdt h1 {
+    font-size: 20px;
+    color: #444;
+    margin: 20px 0 10px 15px;
+}
+#page_hbdt ul.history li {
+    line-height: 50px;
+    font-size: 22px;
+    color: #999;
+    text-align: center;
+}
+.travel_list li {
+    position: relative;
+    min-height: 130px;
+}
+.travel_list tr {
+    height: 30px;
+}
+.travel_list li .normal_panel > div:first-child {
+    height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.travel_list .right {
+    width: 40px;
+    text-align: center;
+}
+.travel_list .right span {
+    margin-left: 10px;
+}
+.travel_list span {
+    display: inline-block;
+}
+.travel_list .normal_panel {
+    margin-right: 0;
+}
+.travel_list .airline-icon {
+    width: 30px;
+    text-align: center;
+}
+.travel_list .airline-icon img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+.travel_list .name {
+    color: #666;
+    font-size: 20px;
+}
+.travel_list .code {
+    color: #111;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.travel_list .terminal {
+    font-size: 16px;
+    background-color: #0aa9dc;
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff;
+    margin-top: 10px;
+}
+.travel_list .time1, .travel_list .time2 {
+    font-size: 18px;
+    color: #000;
+}
+.travel_list .time1 {
+    text-align: left;
+}
+.travel_list .time2 {
+    text-align: right;
+    margin-left: 3px;
+}
+.travel_list .airport {
+    color: #999;
+}
+.travel_list .change {
+    color: #66ff99;
+}
+.travel_list .real {
+    text-align: center;
+    background-color: #66ff99;
+    color: #000;
+    padding: 2px 20px;
+    border-radius: 100px;
+    margin-top: 3px;
+}
+.travel_list .left_circle i:first-child {
+    border: 2px solid #999;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.travel_list .left_circle i:last-child {
+    border-top: 2px solid #999;
+    width: 20px;
+    height: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.travel_list .left_circle {
+    margin-left: 5px;
+}
+.travel_list .right_circle {
+    margin-right: 5px;
+}
+.travel_list .right_circle i:last-child {
+    border: 2px solid #999;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 8px;
+}
+.travel_list .right_circle i:first-child {
+    border-top: 2px solid #999;
+    width: 20px;
+    height: 2px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.travel_list tr .airport:last-child {
+    text-align: right;
+}
+.state_arrive, .state_delay, .state_flying, .state_cancel {
+    text-align: center;
+}
+.state_flying {
+    color: #00bcd4;
+}
+.state_delay {
+    color: #d4cd00;
+}
+.state_arrive {
+    color: #3193f5;
+}
+.state_cancel {
+    color: #d40023;
+}
+
+#page_hbdt_detail .fly {
+    background-color: #00bcd4;
+    color: #fff;
+    margin-bottom: 0;
+}
+#page_hbdt_detail .navigate-right {
+    margin-right: 0;
+}
+#page_hbdt_detail .table-view-cell {
+    padding-right: 0;
+}
+#page_hbdt_detail .normal_panel {
+    margin: 10px 0 0;
+}
+#page_hbdt_detail .normal_panel img {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+}
+#page_hbdt_detail .normal_panel > div:first-child {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+#page_hbdt_detail .normal_panel .flex {
+    text-align: center;
+}
+#page_hbdt_detail .normal_panel .flex ul > li:first-child {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+#page_hbdt_detail .normal_panel .flex ul > li:last-child {
+    color: #777;
+}
+/* ======================================= 机场惠 ==========================================================*/
+.preferential {
+    position: relative;
+    height: 145px;
+    display: block;
+}
+.preferential img {
+    width: 100%;
+}
+.preferential .bottom {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    padding: 0 8px;
+    font-size: 15px;
+    color: #333;
+}
+.preferential .bottom .btn {
+    color: #fff;
+    background-color: #00bcd4;
+    border: 1px solid #00bcd4;
+    padding: 5px 10px;
+    margin: -3px 0 0;
+}
+.preferential ul {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    text-align: right;
+    color: #fff;
+}
+.preferential ul li {
+    line-height: 1.5;
+}
+.preferential ul li:nth-child(2){
+    font-size: 30px;
+}
+.preferential ul li:last-child{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    opacity: 0.5;
+}
+/* ======================================= 机场商业信息 ==========================================================*/
+#page_airport_business img {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+}
+#page_airport_business h3 {
+    font-size: 20px;
+}
+/* ======================================= 个人中心 ==========================================================*/
+#page_personal_center .person_card {
+    background-image: url("../image/personal_center/卡片背景.png");
+    background-size: 100% 100%;
+    height: 200px;
+    margin: 20px 10px;
+    position: relative;
+}
+.person_card .icon {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    width: 57px;
+    height: 56px;
+}
+.person_card .name {
+    color: #fff;
+    position: absolute;
+    left: 90px;
+    top: 28px;
+}
+.person_card .name > div:first-child {
+    font-size: 18px;
+}
+.person_card .level {
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 32px;
+}
+.person_card .level img {
+    width: 30px;
+    height: 30px;
+}
+.person_card .level span {
+    margin: 0 10px 0 0;
+}
+.person_card .no {
+    color: #333;
+    position: absolute;
+    top: 105px;
+    left: 25px;
+}
+.person_card .no label {
+    font-size: 20px;
+}
+.person_card .no span {
+    font-size: 30px;
+    font-weight: bold;
+}
+.person_card .integral {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    background-image: url("../image/personal_center/积分边框.png");
+    background-size: 100% 100%;
+    width: 130px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    color: #333;
+}
+.person_card .integral > img:first-child {
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+.person_card .integral span {
+    margin: 0 15px 0 0;
+}
+#personQCode {
+    position: absolute;
+    right: 20px;
+    top: 90px;
+    width: 100px;
+    height: 100px;
+}
+#page_personal_center .table-view img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+#page_personal_center .table-view span {
+    position: relative;
+    top: 4px;
+    font-size: 18px;
+    display: inline-block;
+    color: #333;
+}
+/* ======================================= 我的订单 ==========================================================*/
+#page_my_order img {
+    width: 100px;
+    height: 80px;
+}
+#page_my_order .pay {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    text-align: center;
+}
+#page_my_order .pay div {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #45e675;
+}
+#page_my_order .media-body {
+    font-size: 15px;
+}
+#page_my_order p {
+    font-size: 13px;
+}
+/* ======================================= 飞行简历 ==========================================================*/
+#page_flight_resume .flex {
+    padding: 5px 10px 15px 10px;
+    font-size: 15px;
+}
+#page_flight_resume .flex img {
+    width: 42%;
+    height: 100px;
+}
+#page_flight_resume .flex table th {
+    text-align: center;
+}
+#page_flight_resume .flex table tr {
+    line-height: 1.6;
+}
+#page_flight_resume .flex div {
+    width: 58%;
+    text-align: center;
+    padding-left: 15px;
+}
+#page_flight_resume .flex table th, #page_flight_resume .flex table td {
+    border: 1px solid #ccc;
+}
+#page_flight_resume .flex tbody > tr > td:first-child {
+    color: #777;
+}
+#page_flight_resume table {
+    font-size: 15px;
+}
+#page_flight_resume table tr:first-child td {
+    padding-bottom: 5px;
+}
+#page_flight_resume table img {
+    width: 17px;
+    height: 17px;
+    margin-top: -5px;
+    margin-right: 8px;
+}
+/* ======================================= 优惠券详情 ==========================================================*/
+#page_airport_preferential_detail .pTitle {
+    background-color: #fff;
+    height: 80px;
+}
+#page_airport_preferential_detail .pTitle p {
+    font-size: 15px;
+}
+#page_airport_preferential_detail a .glyphicon {
+    font-size: 15px;
+    margin-left: 10px;
+}
+/* ======================================= 日历 ==========================================================*/
+#page_calendar {
+    background-color: #e5e5e5;
+}
+.calendar-header {
+    position: absolute;
+    top:50px;
+}
+.calendar-header th {
+    text-align: center;
+    color: #00bcd4;
+    font-size: 18px;
+}
+#calendar table {
+    text-align: center;
+    background-color: #eeeeee;
+}
+#calendar .month_title {
+    text-align: center;
+    font-size: 22px;
+    padding: 15px 0;
+    color: #333;
+}
+#calendar table td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    color: #333;
+}
+#calendar table tr:last-child td {
+    border-bottom: none;
+}
+#calendar .disable {
+    color: #777;
+}
+#calendar a {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+#calendar .current {
+    background-color: #00bcd4;
+    color: #fff;
+    border-radius: 100%;
+}
+
+#businessFlyHeader h1 > span {
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
+    background-color: #21283e;
+    font-weight: normal;
+}
+#businessFlyHeader {
+    background-image: url("../image/plane.jpg");
+    height: 200px;
+}
+#businessFlyHeader p {
+    top: 120px;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+}
+#businessFlyTabs {
+    padding: 0 15px;
+    position: absolute;
+    top: 180px;
+    z-index: 999;
+    width: 100%;
+}
+#businessFlyTabs .normal_panel > div.tabs {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#businessFlyTabs .normal_panel > div.tabs > a {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #aaa;
+    border-top: 5px solid white;
+}
+#businessFlyTabs .normal_panel > div.tabs > a.active {
+    border-top-color: #00bcd4;
+    color: #333;
+}
+#bao_ji td {
+    height: 55px;
+}
+#page_business_fly footer {
+    font-size: 20px;
+}
+#page_business_fly footer a:first-child {
+    font-size: 12px;
+    color: #555;
+}
+#page_business_fly footer a:first-child i {
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+}
+#page_business_fly footer a.active {
+    background-color: #00bcd4;
+    color: #fff;
+}
+#tiao_ji select {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2 auto;
+    -webkit-flex: 2 auto;
+    -ms-flex: 2 auto;
+    flex: 2 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 20px;
+}
