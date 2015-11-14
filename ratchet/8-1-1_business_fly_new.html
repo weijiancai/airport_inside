@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>机场里</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="js/ratchet/css/ratchet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/airport.css" />
+
+
+    <script src="js/ratchet/js/ratchet.js"></script>
+    <!--<script src="js/ratchet/js/push.js"></script>-->
+    <script src="js/ratchet/js/sliders.js"></script>
+
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/airport.js"></script>
+</head>
+
+<body id="page_business_fly">
+
+<header id="businessFlyHeader">
+    <a class="goBack" href="1_index.html" style="margin-top: 5px;"><i class="fa fa-long-arrow-left"></i></a>
+
+    <h1 style="margin-top: 5px;">
+        <span>
+        <span class="glyphicon glyphicon-chevron-left" style="margin-right: 10px;"></span>
+        Gulfstream G550
+        <span class="glyphicon glyphicon-chevron-right" style="margin-left: 10px;"></span>
+        </span>
+    </h1>
+
+    <p>海流G550公务机（Gulfstream G550）,由美国海湾余杭公司于2003年推出，它是人类飞行史上首架直航范围能从纽约直达东京的超远程公务飞机。海流G550公务机是国际顶级远程喷气式公务机代表机型之一......</p>
+</header>
+
+<div id="businessFlyTabs">
+    <div class="normal_panel">
+        <div class=" flex tabs">
+            <a class="active" data-target="bao_ji">商务包机</a>
+            <a data-target="tiao_ji">商务调机</a>
+        </div>
+
+        <div id="bao_ji">
+            <form style="margin: 15px 0;padding: 0;border: none;">
+                <table class="formTable">
+                    <tr>
+                        <td style="width: 80px;"><label for="traveller-name">姓　　名</label></td>
+                        <td><input type="text" id="traveller-name" name="name" placeholder="请输入乘客姓名"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact-way">联系方式</label></td>
+                        <td><input type="tel" id="contact-way" name="contact-way" required placeholder="请输入手机号码"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="riding-date">包机日期</label></td>
+                        <td>
+                            <input type="text" id="riding-date" class="date" name="riding-date" required>
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label>预付金额：<span class="blue_00bcd4_f36">￥12121</span></label></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="tiao_ji" style="display: none;">
+            <a class="btn btn-normal-small" style="margin-left: 5px;margin-top: 10px;">航线</a>
+
+            <div class="normal_panel" style="padding: 0;margin: 10px 0 0 0;">
+                <table>
+                    <tr>
+                        <td rowspan="2" class="text-center" style="background-color: #777;color: #fff;padding: 10px 0;">
+                            <label>出发地</label><br/>
+                            <img style="height: 20px;"/><br/>
+                            <label>目的地</label>
+                        </td>
+                        <td class="" style="border-bottom: 1px solid #eee">
+                            <select class="mb0">
+                                <option>北京（首都国际）</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="">
+                            <select class="mb0">
+                                <option>广州（白云）</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <ul class="table-view" style="border: none;margin-bottom: 0;">
+                <li class="table-view-cell">
+                    <a class="navigate-right">
+                        <i class="glyphicon glyphicon-calendar f18"></i>
+                        2015-07-11
+                    </a>
+                </li>
+            </ul>
+
+
+            <form style="margin: 0;padding: 0 5px;border: none;">
+                <table class="formTable">
+                    <tr>
+                        <td style="width: 80px;"><label for="traveller-name">姓　　名</label></td>
+                        <td><input type="text" id="traveller-name" name="name" placeholder="请输入乘客姓名"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contact-way">联系方式</label></td>
+                        <td><input type="tel" id="contact-way" name="contact-way" required placeholder="请输入手机号码"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label>预付金额：<span class="blue_00bcd4_f36">￥12121</span></label></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="content" style="top: 200px;">
+
+</div>
+
+<footer class="bar bar-tab">
+    <a class="tab-item" href="1_index.html">
+        <span class="tab-label">定金：<i>￥36966</i></span>
+    </a>
+    <a class="tab-item active" href="8-2-2_business_fly_booking_tiao.html">
+        <span class="tab-label">支付定金</span>
+    </a>
+</footer>
+
+</body>
+</html>
