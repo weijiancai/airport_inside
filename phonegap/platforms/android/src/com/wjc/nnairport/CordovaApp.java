@@ -38,8 +38,8 @@ public class CordovaApp extends CordovaActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(Menu.NONE, Menu.FIRST + 1, 1, "南宁机场");
-        menu.add(Menu.NONE, Menu.FIRST + 2, 1, "桂林机场");
+        menu.add(Menu.NONE, Menu.FIRST + 1, 1, "刷新缓存");
+        menu.add(Menu.NONE, Menu.FIRST + 2, 1, "退出系统");
         return true;
     }
 
@@ -47,15 +47,21 @@ public class CordovaApp extends CordovaActivity
     public boolean onMenuItemSelected(int featureId, MenuItem item) {
         switch (item.getItemId()) {
             case Menu.FIRST + 1 : {
-                loadUrl("http://metaui.duapp.com/tpl/jqmobi/nanning.html");
+                appView.clearCache(true);
+//                appView.reload();
+                loadUrl(launchUrl);
                 break;
             }
             case Menu.FIRST + 2 : {
-                loadUrl("http://metaui.duapp.com/tpl/jqmobi/guilin.html");
+                exitApp();
                 break;
             }
         }
         return super.onMenuItemSelected(featureId, item);
     }
 
+    private void exitApp() {
+        appView.postMessage("exit", null);
+        this.finish();
+    }
 }

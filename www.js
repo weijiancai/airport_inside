@@ -29,9 +29,9 @@ var mine = {
 var server = http.createServer(function (request, response) {
     var pathname = decodeURI(url.parse(request.url).pathname);
     if(pathname == '/') {
-        pathname = '1_index.html';
+        pathname = '13-2_login.html';
     }
-    var realPath = path.join("ratchet", pathname);
+    var realPath = path.join("phonegap/platforms/android/assets/www/ratchet", pathname);
     console.log(realPath);
     var ext = path.extname(realPath);
     ext = ext ? ext.slice(1) : 'unknown';
