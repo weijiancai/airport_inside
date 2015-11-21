@@ -48,12 +48,13 @@ li.normal_panel a {
     color: #000;
 }
 li.normal_panel a > p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
-    color: #000;
+    color: #333;
 }
 li.normal_panel a > p .pull-right {
-    font-size: 15px;
+    font-size: 13px;
+    color: #999;
 }
 /* ======================================= 餐厅详情 ==========================================================*/
 #restaurant_detail header .title h1 {
@@ -67,7 +68,7 @@ li.normal_panel a > p .pull-right {
     text-align: left;
 }
 #restaurant_service .flex {
-    font-size: 18px;
+    font-size: 15px;
 }
 /* ======================================= 套餐详情 ==========================================================*/
 #setDetail td {
@@ -80,7 +81,8 @@ li.normal_panel a > p .pull-right {
 }
 #content_booking h1 {
     text-align: center;
-    font-size: 26px;
+    font-size: 18px;
+    color: #333;
 }
 /* ======================================= 机场导航 ==========================================================*/
 #page_airport_nav h1 {

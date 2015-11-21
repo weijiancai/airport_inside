@@ -18,7 +18,7 @@ header h1 {
 hr {
     margin-top: 10px;
     margin-bottom: 10px;
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #e0e0e0;
 }
 a {
     color: #000;
@@ -41,6 +41,14 @@ a:hover, a:focus {
 .gray_888 {
     color: #888;
 }
+.gray_999_f13 {
+    color: #888;
+    font-size: 13px;
+}
+.gray_888_f15 {
+    color: #888;
+    font-size: 15px;
+}
 .gray_888_f18 {
     color: #888;
     font-size: 18px;
@@ -51,15 +59,26 @@ a:hover, a:focus {
     color: #00bcd4;
     font-size: 36px;
 }
+.blue_00bcd4_f24 {
+    color: #00bcd4;
+    font-size: 24px;
+}
 .blue_00bcd4_f20 {
     color: #00bcd4;
     font-size: 20px;
+}
+.blue_00bcd4_f18 {
+    color: #00bcd4;
+    font-size: 18px;
 }
 .blue_00bcd4_f26 {
     color: #00bcd4;
     font-size: 26px;
 }
 /* 18号字 */
+.f12 {
+    font-size: 12px;
+}
 .f18 {
     font-size: 18px;
 }
@@ -103,6 +122,9 @@ a:hover, a:focus {
 .pt10 {
     padding-top: 10px;
 }
+.ptb5 {
+    padding: 5px 0;
+}
 .ptb10 {
     padding: 10px 0;
 }
@@ -130,6 +152,12 @@ a:hover, a:focus {
 .mr5 {
     margin-right: 5px;
 }
+.mr10 {
+    margin-right: 10px;
+}
+.mr15 {
+    margin-right: 15px;
+}
 .mr35 {
     margin-right: 35px;
 }
@@ -138,6 +166,9 @@ a:hover, a:focus {
 }
 .mtl10 {
     margin: 10px 0 0 10px;
+}
+.mtb10 {
+    margin: 10px 0;
 }
 .mtb15 {
     margin: 15px 0;

@@ -4,6 +4,12 @@
     display: none !important;
 }
 
+.media {
+    margin-top: 0;
+}
+.table-view {
+    background-color: #fafafa;
+}
 .table-view-cell1 {
     position: relative;
     padding: 8px;
@@ -52,7 +58,7 @@ select {
     text-align: center;
 }
 
-form, .normal_panel {
+.normal_panel {
     padding-top: 10px;
     /*margin: 10px;*/
     background: #fafafa;
@@ -69,7 +75,7 @@ form, .normal_panel {
 .normal_panel {
     padding: 10px;
 }
-form > div {
+/*form > div {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -98,8 +104,8 @@ form > div label {
     margin-bottom: 5px;
     font-weight: bold;
     float: left;
-}
-form input[type="text"],form input[type="tel"], form input[type="password"], form input[type="email"] {
+}*/
+form input[type="text"],form input[type="tel"], form input[type="password"], form input[type="email"], form input[type="number"] {
     -webkit-box-flex: 2;
     -moz-box-flex: 2 auto;
     -webkit-flex: 2 auto;
@@ -209,6 +215,9 @@ td .input-group .input-group-addon .fa:before {
 }
 
 /* 表单表格 */
+.formGrid {
+    font-size: 14px;
+}
 .formGrid .form_row {
     display: -webkit-box;
     display: -moz-box;
@@ -220,8 +229,11 @@ td .input-group .input-group-addon .fa:before {
 }
 .formGrid .form_row .left {
     width: 80px;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 13px;
+    color: #333;
+}
+.formGrid .form_row .left label {
+    font-weight: normal;
 }
 .formGrid .form_row .left img {
     width: 20px;
@@ -231,41 +243,93 @@ td .input-group .input-group-addon .fa:before {
 }
 .formGrid .form_row .right {
     flex: 1;
+    position: relative;
 }
 .formGrid .form_row .right .btn-verify-code{
     margin: 7px 0 0 10px;
+    padding: 6px 8px 7px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
 }
-.flex_right {
+.formGrid .form_row .right i.glyphicon {
+    right: 20px;
+    top: 15px;
+    font-size: 15px;
+    color: #666;
+    position: absolute;
+}
+.formGrid .toggle {
+    margin-top: 8px;
+}
+.formGrid .toggle:before {
+    top: -10px;
+}
+.flex_right,.flex_left {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
 }
-.flex_right div:first-child {
+.flex_right *:first-child {
     flex: 1;
+}
+.flex_left *:last-child {
+    flex: 1;
+}
+.formGrid .form_panel {
+    padding: 15px 0 15px 10px;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-weight: normal;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    -webkit-transition: 0ms cubic-bezier(0.1, 0.57, 0.1, 1);
+    transform: translate(0px, 0px) translateZ(0px);
+}
+.formGrid .form_panel h3 {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 -15px -10px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.formGrid .form_top {
+    margin-bottom: 15px;
+    color: #333;
+}
+.formGrid .form_bottom {
+    margin-top: 20px;
+    margin-left: -10px;
+    background-color: #fff;
 }
 /* 通用按钮 */
 .btn-normal {
-    margin: 0 15px;
+    margin: 0 25px;
     background-color: #00bcd4;
     padding: 15px 10px;
     font-size: 18px;
     color: #fff;
+    height: 48px;
 }
 .btn-normal-small {
     margin: 0 15px;
     background-color: #00bcd4;
     padding: 6px 20px;
-    font-size: 16px;
+    font-size: 13px;
     color: #fff;
 }
 .btn-green {
     margin: 0 15px;
     background-color: #4cff83;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
+    width: 144px;
+    height: 36px;
 }
 .btn-verify-code {
     margin: 0 15px;
@@ -280,15 +344,18 @@ td .input-group .input-group-addon .fa:before {
     background-color: #777;
     border-color: #ccc;
 }
+body {
+    background-color: #f5f5f5;
+}
 /* 头部 */
 header {
-    background-image: url("../image/bg_top.png");
-    -webkit-background-size: cover;
+    background: #f5f5f5 url("../image/bg_top1.png");
     background-size: cover;
     min-height: 50px;
     /*padding: 10px 5px;*/
     position: absolute;
     width: 100%;
+    border-bottom: 2px solid #e0e0e0;
 }
 header > h1 {
     position: absolute;
@@ -319,14 +386,17 @@ header .right {
     right: 15px;
 }
 header img.right {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    /*height: 35px;*/
 }
 header .tabs, header .nav {
     position: absolute;
-    top: 70px;
+    top: 60px;
     text-align: center;
     width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
 }
 header .tabs a {
     padding-bottom: 15px;
@@ -340,8 +410,8 @@ header .tabs a.active {
 }
 header .nav a {
     font-weight: bold;
-    font-size: 19px;
-    color: #777;
+    font-size: 15px;
+    color: #666;
 }
 header .nav i {
     margin-left: 10px;
@@ -487,9 +557,6 @@ footer a.active #icon_person {
 }
 
 /* ======================================= 快捷值机 ==========================================================*/
-#form_checkIn .flex {
-    margin: -10px 0 18px 18px;
-}
 #form_checkIn select:after {
     display: block;
     position: relative;
@@ -538,7 +605,7 @@ footer a.active #icon_person {
     /*padding-left: 7px;*/
 }
 .grid_image td div {
-    margin-top: 10px;
+    margin: 10px 0;
     color: #333;
     font-size: 15px;
 }
@@ -555,43 +622,47 @@ footer a.active #icon_person {
 }
 .desc p label {
     width: 100px;
-    color: #000;
+    color: #333;
+    font-size: 15px;
+}
+.desc dt {
+    color: #333;
+    font-size: 15px;
 }
 .desc dd {
-    color: #777;
+    color: #666;
 }
 /* ======================================= 餐厅详情 ==========================================================*/
-#restaurant_detail header .title {
-    padding: 15px 15px 0 0;
+#restaurant_detail .detail_title {
+    padding: 5px 15px 5px 15px;
+    height: 70px;
+    border-bottom: 2px solid #e0e0e0;
 }
 
-#restaurant_detail header .title div:first-child {
-    width: 80%;
-    border-right: 1px inset #ccc;
-    display: inline-block;
+#restaurant_detail .detail_title h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
 }
-#restaurant_detail header .title div:last-child {
-    display: inline-block;
-}
-#restaurant_detail header .title  img {
-    width: 40px;
-    height: 40px;
-    margin-top: 15px;
+#restaurant_detail .detail_title h4 {
+    font-size: 13px;
+    color: #999;
 }
 #restaurant_detail .normal_panel {
     padding: 10px;
 }
 .normal_panel > ul {
-    margin-top: 15px;
+    /*margin-top: 15px;*/
 }
 
 .normal_panel a.btn-normal-small {
     margin-left: 0;
 }
 .person_icon {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
+    margin-right: -10px;
 }
 #restaurant_comment .table-view-cell {
     padding-left: 0;
@@ -602,6 +673,19 @@ footer a.active #icon_person {
 }
 #restaurant_comment h4 {
     text-align: center;
+    font-size: 15px;
+    color: #666;
+}
+#restaurant_comment .f18 {
+    font-size: 13px;
+    color: #666;
+}
+#restaurant_comment .stars img {
+    width: 12px;
+}
+#restaurant_comment .p_content {
+    font-size: 15px;
+    color: #333;
 }
 #setTooltip dd {
     margin: 5px 0;
@@ -684,7 +768,7 @@ footer a.active #icon_person {
     top: 60px;
     border: none;
     margin-right: 70px;
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 20px;
     color: #333;
     background: none;;
@@ -698,7 +782,10 @@ footer a.active #icon_person {
     border-bottom: 1px solid #333;
 }
 #page_login form > div label {
-    padding-bottom: 0px;
+    padding-bottom: 0;
+}
+#page_login form .form_row > div:first-child {
+    width: 80px;
 }
 #forgetPassword {
     text-align: right;
@@ -745,7 +832,11 @@ footer a.active #icon_person {
 /* ======================================= 人工服务 ==========================================================*/
 #page_artificialService ul img {
     width: 64px;
-    height: 64px;
+    /*height: 64px;*/
+}
+#page_artificialService .media-body {
+    font-size: 15px;
+    color: #333;
 }
 /* ======================================= 机场导航 ==========================================================*/
 #page_airport_nav > div {
@@ -1280,19 +1371,20 @@ footer a.active #icon_person {
     font-weight: normal;
 }
 #businessFlyHeader {
-    background-image: url("../image/plane.jpg");
-    height: 200px;
+    background-image: url("../image/business_fly/beechkingairc90gti.png");
+    height: 240px;
 }
 #businessFlyHeader p {
-    top: 120px;
+    top: 105px;
     position: absolute;
     color: white;
     font-size: 12px;
+    padding: 15px;
 }
 #businessFlyTabs {
     padding: 0 15px;
     position: absolute;
-    top: 180px;
+    top: 210px;
     z-index: 999;
     width: 100%;
 }
@@ -1305,8 +1397,8 @@ footer a.active #icon_person {
 #businessFlyTabs .normal_panel > div.tabs > a {
     padding-top: 15px;
     font-weight: bold;
-    font-size: 20px;
-    color: #aaa;
+    font-size: 18px;
+    color: #ccc;
     border-top: 5px solid white;
 }
 #businessFlyTabs .normal_panel > div.tabs > a.active {
@@ -1318,19 +1410,22 @@ footer a.active #icon_person {
 }
 #page_business_fly footer {
     font-size: 20px;
+    z-index: 99999;
 }
 #page_business_fly footer a:first-child {
-    font-size: 12px;
-    color: #555;
+    font-size: 13px;
+    color: #333;
 }
 #page_business_fly footer a:first-child i {
-    font-size: 25px;
+    font-size: 18px;
     color: #333;
     font-weight: bold;
 }
 #page_business_fly footer a.active {
     background-color: #00bcd4;
     color: #fff;
+    font-size: 18px;
+
 }
 #tiao_ji select {
     -webkit-box-flex: 2;
@@ -1348,4 +1443,52 @@ footer a.active #icon_person {
     box-shadow: none;
     width: 100%;
     height: 20px;
+}
+
+
+.div_block {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+}
+/* 券，团 */
+.quan, .tuan {
+    background-image: url("../image/airport_service/block_red.png");
+}
+/* 套,订 */
+.tao, .ding {
+    background-image: url("../image/airport_service/block_blue.png");
+}
+/* 惠 */
+.hui {
+    background-image: url("../image/airport_service/block_yellow.png");
+}
+
+#content_booking .formGrid:first-child .form_row {
+    height: 36px;
+    line-height: 36px;
+}
+#content_booking .formGrid:first-child .left {
+    font-size: 13px;
+    color: #999;
+}
+#content_booking .formGrid:first-child .right {
+    font-size: 15px;
+    color: #333;
+}
+.amount_input img {
+    width: 27px;
+    margin-bottom: 1px;
+}
+#content_booking .amount_input input {
+    height: 26px;
+    width: 50px;
+    border: 1px solid #ccc;
+    margin: 1px -5px 0 -5px;
+    padding: 0;
+    text-align: center;
 }

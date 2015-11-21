@@ -32,79 +32,51 @@
 
 <header>
     <a class="goBack" href="13-2_login.html"><img src="image/home/reback.png"></a>
-
     <h1>注册</h1>
 </header>
 
 <div class="content" id="page_regist">
-    <form class="normal_panel formTable">
-        <table>
-            <tr>
-                <td style="width: 80px;"><span class="img"><img src="image/regist/phone.png" style="height: 30px;"></span><label>手机号</label></td>
-                <td><input type="tel" id="mobile-num" name="mobile-num" required aria-required="true" placeholder="请输入手机号码"></td>
-            </tr>
-            <tr>
-                <td><span class="img"><img src="image/regist/verifyCode.png"></span><label>验证码</label></td>
-                <td>
-                    <table>
-                        <tr>
-                            <td><input type="text" id="identifying-code" name="identifying-code" required aria-required="true" placeholder="请输入验证码"></td>
-                            <td><a href="#" class="btn btn-verify-code">获取验证码</a></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 80px;"><span class="img"><img src="image/regist/password.png"></span><label>密码</label></td>
-                <td><input type="password" id="password" name="password" required aria-required="true" placeholder="请输入密码"></td>
-            </tr>
-            <tr>
-                <td style="width: 80px;"><span class="img"><img src="image/regist/password.png"></span><label>密码</label></td>
-                <td><input type="password" id="repassword" name="repassword" required aria-required="true" placeholder="请再次输入密码"></td>
-            </tr>
-        </table>
-    </form>
-
     <form class="formGrid p15">
-        <div class="form_row">
-            <div class="left"><img src="image/regist/phone.png" style="height: 30px;"><label>手机号</label></div>
-            <div class="right"><input type="tel" id="mobile-num" name="mobile-num" required aria-required="true" placeholder="请输入手机号码"></div>
-        </div>
-        <div class="form_row">
-            <div class="left"><span class="img"><img src="image/regist/verifyCode.png"></span><label>验证码</label></div>
-            <div class="right flex_right">
-                <div><input type="text" id="identifying-code" name="identifying-code" required aria-required="true" placeholder="请输入验证码"></div>
-                <div><a href="#" class="btn btn-verify-code" style="margin-right: 0;">获取验证码</a></div>
+        <div class="form_panel">
+            <div class="form_row">
+                <div class="left"><img src="image/regist/phone.png" style="height: 30px;"><label>手机号</label></div>
+                <div class="right"><input type="tel" id="mobile-num" name="mobile-num" required aria-required="true" placeholder="请输入手机号码"></div>
+            </div>
+            <div class="form_row">
+                <div class="left"><span class="img"><img src="image/regist/verifyCode.png"></span><label>验证码</label></div>
+                <div class="right flex_right">
+                    <div><input type="text" id="identifying-code" name="identifying-code" required aria-required="true" placeholder="请输入验证码"></div>
+                    <div><a href="#" class="btn btn-verify-code" style="margin-right: 0;">获取验证码</a></div>
+                </div>
+            </div>
+            <div class="form_row">
+                <div class="left"><span class="img"><img src="image/regist/password.png"></span><label>密码</label></div>
+                <div class="right"><input type="password" id="password" name="password" required aria-required="true" placeholder="请输入密码"></div>
+            </div>
+            <div class="form_row">
+                <div class="left"><span class="img"><img src="image/regist/password.png"></span><label>密码</label></div>
+                <div class="right"><input type="password" id="repassword" name="repassword" required aria-required="true" placeholder="请再次输入密码"></div>
             </div>
         </div>
-        <div class="form_row">
-            <div class="left"><span class="img"><img src="image/regist/password.png"></span><label>密码</label></div>
-            <div class="right"><input type="password" id="password" name="password" required aria-required="true" placeholder="请输入密码"></div>
-        </div>
-        <div class="form_row">
-            <div class="left"><span class="img"><img src="image/regist/password.png"></span><label>密码</label></div>
-            <div class="right"><input type="password" id="repassword" name="repassword" required aria-required="true" placeholder="请再次输入密码"></div>
+    </form>
+
+    <form class="formGrid p15" style="margin-top: -15px">
+        <div class="form_panel">
+            <div class="form_row">
+                <div class="left"><span class="img"><img src="image/regist/userName.png"></span><label>昵称</label></div>
+                <div class="right"><input type="text" id="nickname" name="nickname" required aria-required="true" placeholder="请输入昵称"></div>
+            </div>
+            <div class="form_row">
+                <div class="left"><span class="img"><img src="image/regist/email.png"></span><label>邮箱</label></div>
+                <div class="right"><input type="email" id="email" name="email" required aria-required="true" placeholder="请输入邮箱（以备找回密码验证）"></div>
+            </div>
         </div>
     </form>
 
-
-    <!--<form class="normal_panel">
-        <table class="formTable">
-            <tr>
-                <td style="width: 80px;"><span class="img"><img src="image/regist/userName.png"></span><label>昵称</label></td>
-                <td><input type="text" id="nickname" name="nickname" required aria-required="true" placeholder="请输入昵称"></td>
-            </tr>
-            <tr>
-                <td style="width: 80px;"><span class="img"><img src="image/regist/email.png"></span><label>邮箱</label></td>
-                <td><input type="email" id="email" name="email" required aria-required="true" placeholder="请输入邮箱（以备找回密码验证）"></td>
-            </tr>
-        </table>
-    </form>-->
-
-    <div class="mt15">
+    <div>
         <a class="btn btn-normal block">提交</a>
     </div>
-    <a id="agreeProtocol" class="text-center blue_00bcd4_f20 mt5">同意《服务协议》<span class="active"></span></a>
+    <a id="agreeProtocol" class="text-center blue_00bcd4_f20 mt15">同意《服务协议》<span class="active"></span></a>
 </div>
 </body>
 </html>

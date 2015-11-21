@@ -1,68 +1,103 @@
 .listview_1 {
-
+    padding: 0 15px 10px 15px;
 }
 .listview_1 > li {
-    min-height: 150px;
+    min-height: 140px;
+    margin-top: 10px;
 }
 .listview_1 > li p {
     margin: 0;
 }
+.listview_1 > li  div {
+
+}
 .listview_1 > li  div > img {
-    width: 100px;
-    height: 80px;
-    position: relative;
+    width: 144px;
+    height: 87px;
+    margin-top: 10px;
+    /*position: relative;
     left: 0;
-    top: 10px;
+    top: 10px;*/
 }
 .listview_1 > li div > ul {
-    position: absolute;
-    left: 110px;
-    display: inline-block;
-    padding: 5px;
+    /*position: absolute;
+    left: 159px;
+    display: inline-block;*/
+    padding: 5px 0 0 0;
+    flex: 1;
+    margin-left: 10px;
 }
-.listview_1 > li p > span {
+.listview_1 > li div > ul li:nth-child(2){
+    margin-top: 5px;
+    font-size: 13px;
+}
+.listview_1 > li div > ul li:last-child {
+    margin-top: 5px;
+}
+.listview_1 > li div > ul li:last-child span {
+    margin-right: 5px;
+}
+.listview_1 > li div > ul > li:first-child span {
+    /*position: absolute;
+    right: 0;
+    top: 0;*/
+    color: #999;
+    font-size: 12px;
     float: right;
-    color: #888;
+}
+.listview_1 > li div > ul > li:first-child p {
+    display: inline-block;
+}
+.listview_1 > li p > img {
+    width: 12px;
 }
 
 .listview_2 li {
     position: relative;
-    min-height: 100px;
+    min-height: 80px;
+    margin-top: 10px;
 }
 
 .listview_2 li img {
-    width: 100px;
-    height: 90px;
+    width: 88px;
+    height: 70px;
     position: absolute;
 }
 .listview_2 li div {
     position: absolute;
-    left: 110px;
+    left: 100px;
     top: 0;
-    right: 50px;
-    min-height: 90px;
-    padding: 8px 0;
+    right: 70px;
+    min-height: 70px;
+    /*padding: 8px 0;*/
 }
 .listview_2 li span {
     position: absolute;
     top: 30px;
     right: 0;
-    font-size: 25px;
+    font-size: 24px;
     color: #ff4c6a;
     text-align: right;
 }
+.listview_2 li span i {
+    font-size: 18px;
+    font-style: normal;
+}
 .listview_2 li h3 {
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
+    color: #333;
 }
 .listview_2 li h5 {
     position: absolute;
     bottom: 0;
     margin: 0;
+    font-size: 15px;
+    color: #999;
 }
 .listview_2 li h4 {
     position: absolute;
-    left: 110px;
+    left: 100px;
     right: 0;
     bottom: -5px;
     border-bottom: 1px solid #ccc;

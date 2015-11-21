@@ -34,57 +34,61 @@
 
 <header style="padding: 0;">
     <img src="image/quick_check-in/top_background.png" style="width: 100%;">
-    <a class="goBack" href="1_index.html"><i class="fa fa-long-arrow-left"></i></a>
-    <h1 style="margin-top: 5px;">快捷值机</h1>
+    <a class="goBack" href="1_index.html"><img src="image/home/reback.png"></a>
+    <h1>快捷值机</h1>
 </header>
 
 <div class="content" style="top: 130px;">
-    <form id="form_checkIn">
-        <div>
-            <label for="traveller-name">旅客姓名</label>
-            <input type="text" id="traveller-name" name="name">
-        </div>
-        <div>
-            <label for="contact-way">联系方式</label>
-            <input type="tel" id="contact-way" name="contact-way" required>
-        </div>
-        <div>
-            <label for="id-card">身份证件</label>
-            <input type="text" id="id-card" name="id-card" required>
-        </div>
-        <div>
-            <label for="flight-num">航班号&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" id="flight-num" name="flight-num" required>
-        </div>
-        <div>
-            <label for="riding-date">乘机日期</label>
-            <input type="text" id="riding-date" class="date" name="riding-date" required>
-            <i class="glyphicon glyphicon-calendar"></i>
-        </div>
-        <div>
-            <label>座位区域</label>
-        </div>
-        <div class="flex">
-            <select>
-                <option>前排</option>
-                <option>中间</option>
-                <option>后排</option>
-            </select>
-            <select>
-                <option>靠窗</option>
-                <option>走道</option>
-                <option>中间</option>
-            </select>
-            <select>
-                <option>靠左</option>
-                <option>中间</option>
-                <option>靠右</option>
-            </select>
-            <select>
-                <option>上层</option>
-                <option>中层</option>
-                <option>下层</option>
-            </select>
+    <form id="form_checkIn" class="formGrid p15">
+        <div class="form_panel">
+            <div class="form_row">
+                <div class="left"><label for="traveller-name">旅客姓名</label></div>
+                <div class="right"><input type="text" id="traveller-name" name="name"></div>
+            </div>
+            <div class="form_row">
+                <div class="left"><label for="contact-way">联系方式</label></div>
+                <div class="right"><input type="tel" id="contact-way" name="contact-way" required></div>
+            </div>
+            <div class="form_row">
+                <div class="left"><label for="id-card">身份证件</label></div>
+                <div class="right"><input type="text" id="id-card" name="id-card" required></div>
+            </div>
+            <div class="form_row">
+                <div class="left"><label for="flight-num">航班号&nbsp;&nbsp;&nbsp;</label></div>
+                <div class="right"><input type="text" id="flight-num" name="flight-num" required></div>
+            </div>
+            <div class="form_row">
+                <div class="left"><label for="riding-date">乘机日期</label></div>
+                <div class="right">
+                    <input type="text" id="riding-date" class="date" name="riding-date" required>
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </div>
+            </div>
+            <div class="form_row">
+                <div class="left"><label>座位区域</label></div>
+            </div>
+            <div class="form_row flex mr10">
+                <select>
+                    <option>前排</option>
+                    <option>中间</option>
+                    <option>后排</option>
+                </select>
+                <select>
+                    <option>靠窗</option>
+                    <option>走道</option>
+                    <option>中间</option>
+                </select>
+                <select>
+                    <option>靠左</option>
+                    <option>中间</option>
+                    <option>靠右</option>
+                </select>
+                <select>
+                    <option>上层</option>
+                    <option>中层</option>
+                    <option>下层</option>
+                </select>
+            </div>
         </div>
     </form>
 

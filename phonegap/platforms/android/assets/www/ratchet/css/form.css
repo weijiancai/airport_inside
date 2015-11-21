@@ -100,7 +100,7 @@ input[type="checkbox"]:after {
 input[type="search"] {
     border-radius: 20px;
 }
-label {
+/*label {
     float: left;
     width: 33%;
     font-weight: normal;
@@ -108,7 +108,7 @@ label {
     color: inherit;
     text-align: right;
     padding: 15px 18px;
-}
+}*/
 label + select,
 label + input[type="radio"],
 label + input[type="checkbox"] label + textarea,
