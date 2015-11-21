@@ -54,9 +54,9 @@ select {
 
 form, .normal_panel {
     padding-top: 10px;
-    margin: 10px;
-    background: #fff;
-    border: 1px solid #ccc;
+    /*margin: 10px;*/
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
     font-size: 14px;
     font-weight: normal;
@@ -207,6 +207,44 @@ td .input-group .input-group-addon .fa:before {
     right: 5px;
     margin-top: 5px;
 }
+
+/* 表单表格 */
+.formGrid .form_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+}
+.formGrid .form_row .left {
+    width: 80px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.formGrid .form_row .left img {
+    width: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.formGrid .form_row .right {
+    flex: 1;
+}
+.formGrid .form_row .right .btn-verify-code{
+    margin: 7px 0 0 10px;
+}
+.flex_right {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex_right div:first-child {
+    flex: 1;
+}
 /* 通用按钮 */
 .btn-normal {
     margin: 0 15px;
@@ -248,7 +286,7 @@ header {
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 50px;
-    padding: 10px 5px;
+    /*padding: 10px 5px;*/
     position: absolute;
     width: 100%;
 }
@@ -268,9 +306,12 @@ header > h1 i.glyphicon {
 }
 header .goBack {
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 15px;
     z-index: 9999;
+}
+header .goBack img {
+    width: 16px;
 }
 header .right {
     position: absolute;
@@ -372,8 +413,8 @@ header .nav i {
 #main_menu td {
     height: 64px;
     width: 160px;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
     font-size: 14px;
     font-weight: normal;
@@ -415,34 +456,34 @@ footer a {
     background-size: cover;
 }
 #icon_main {
-    background-image: url("../image/the_home_page/the_home_page_2.png");
+    background-image: url("../image/home/the_home_page_2.png");
 }
 footer a.active #icon_main {
-    background-image: url("../image/the_home_page/the_home_page_1.png");
+    background-image: url("../image/home/the_home_page_1.png");
 }
 #icon_nav {
-    background-image: url("../image/the_home_page/airport_guide_2.png");
+    background-image: url("../image/home/airport_guide_2.png");
 }
 footer a.active #icon_nav {
-    background-image: url("../image/the_home_page/airport_guide.png");
+    background-image: url("../image/home/airport_guide.png");
 }
 #icon_state {
-    background-image: url("../image/the_home_page/flight_dynamics_2.png");
+    background-image: url("../image/home/flight_dynamics_2.png");
 }
 footer a.active #icon_state {
-    background-image: url("../image/the_home_page/flight_dynamics.png");
+    background-image: url("../image/home/flight_dynamics.png");
 }
 #icon_mall {
-    background-image: url("../image/the_home_page/airport_mall_2.png");
+    background-image: url("../image/home/airport_mall_2.png");
 }
 footer a.active #icon_mall {
-    background-image: url("../image/the_home_page/airport_mall.png");
+    background-image: url("../image/home/airport_mall.png");
 }
 #icon_person {
-    background-image: url("../image/the_home_page/personal_center_2.png");
+    background-image: url("../image/home/personal_center_2.png");
 }
 footer a.active #icon_person {
-    background-image: url("../image/the_home_page/personal_center.png");
+    background-image: url("../image/home/personal_center.png");
 }
 
 /* ======================================= 快捷值机 ==========================================================*/

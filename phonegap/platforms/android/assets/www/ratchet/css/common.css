@@ -124,6 +124,9 @@ a:hover, a:focus {
 .mt60 {
     margin-top: 60px;
 }
+.mr0 {
+    margin-right: 0;
+}
 .mr5 {
     margin-right: 5px;
 }
