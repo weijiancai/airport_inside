@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>机场里</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" type="text/css" href="css/iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="js/ratchet/css/ratchet.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/airport.css" />
+
+
+    <script src="js/ratchet/js/ratchet.js"></script>
+    <!--<script src="js/ratchet/js/push.js"></script>-->
+    <script src="js/ratchet/js/sliders.js"></script>
+
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/airport.js"></script>
+</head>
+
+<body>
+
+<header style="border-bottom: none;">
+    <a class="goBack" href="12-1_airport_mall.html"><img src="image/home/reback.png"></a>
+    <h1>我的优惠券</h1>
+    <div class="flex tabs">
+        <a class="active" data-target="div_all">全部</a>
+        <a data-target="div_not_use">未使用</a>
+        <a data-target="div_used">已使用</a>
+        <a data-target="div_overdue">已过期</a>
+    </div>
+</header>
+
+<div class="content" id="page_airport_preferential" style="top: 100px;">
+    <div id="div_all" class="p15">
+        <div class="preferential">
+            <a href="12-2_airport_preferential_detail.html">
+            <img src="image/preferential/cetering_voucher_2.png">
+            <ul>
+                <li>仅用于伊兰特咖啡</li>
+                <li>满100抵50</li>
+                <li>饮食抵扣券</li>
+            </ul>
+            <div class="bottom">
+                <span>使用期限：2015.08.21-2015.09.21</span>
+                <a class="btn btn-primary pull-right">未使用</a>
+            </div>
+            </a>
+        </div>
+
+        <div class="preferential mt10">
+            <a href="12-2_airport_preferential_detail.html">
+            <img src="image/preferential/shopping_voucher_2.png">
+            <ul>
+                <li>仅用于伊兰特咖啡</li>
+                <li>¥30</li>
+                <li>购物代金券</li>
+            </ul>
+            <div class="bottom">
+                <span>使用期限：2015.08.21-2015.09.21</span>
+                <a class="btn pull-right btn-gray disabled">已过期</a>
+            </div>
+            </a>
+        </div>
+
+        <div class="preferential mt10">
+            <a href="12-2_airport_preferential_detail.html">
+            <img src="image/preferential/accommodation_voucher_2.png">
+            <ul>
+                <li>仅用于北京华侨商务酒店</li>
+                <li>8折</li>
+                <li>住宿折扣券</li>
+            </ul>
+            <div class="bottom">
+                <span>使用期限：2015.08.21-2015.09.21</span>
+                <a class="btn btn-danger pull-right disabled">已使用</a>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="div_not_use" class="p15"></div>
+    <div id="div_used" class="p15"></div>
+    <div id="div_overdue" class="p15"></div>
+</div>
+</body>
+</html>

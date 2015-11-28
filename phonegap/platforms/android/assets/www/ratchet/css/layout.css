@@ -1151,6 +1151,15 @@ footer a.active #icon_person {
     padding: 3px 10px;
     margin: 0 0 0;
 }
+.preferential .bottom .btn-gray {
+    color: #fff;
+    background-color: #777;
+    border-color: #ccc;
+}
+.preferential .bottom .btn-danger {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
 .preferential ul {
     position: absolute;
     right: 15px;
@@ -1410,6 +1419,93 @@ footer a.active #icon_person {
 #page_airport_preferential_detail .content p {
     font-size: 15px;
     color: #666;
+}
+/* ======================================= 天气 ==========================================================*/
+#page_weather header {
+    height: 232px;
+    color: #fff;
+    background: #00bcd4 none;
+}
+#page_weather header .temperature {
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    font-size: 80px;
+}
+#page_weather header .temperature sup {
+    position: relative;
+    top: -40px;
+    font-size: 40px;
+}
+#page_weather header .right {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    text-align: right;
+    font-size: 13px;
+}
+#page_weather header .right img {
+    width: 28px;
+}
+#weather_charts {
+    margin-top: 90px;
+    height: 150px;
+}
+#page_weather .legend_top, #page_weather .legend_bottom {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+}
+#page_weather .legend_top {
+    top: 130px;
+}
+#page_weather .legend_bottom {
+    top: 200px;
+    padding: 0 15px;
+}
+#page_weather .legend_bottom span {
+    width: 30px;
+    display: inline-block;
+}
+#page_weather .weather_top {
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #e0e0e0;
+}
+#page_weather .table-view {
+    font-size: 15px;
+    color: #333;
+}
+#page_weather .table-view-cell {
+    padding: 0;
+    height: 56px;
+    line-height: 56px;
+    position: relative;
+}
+#page_weather .table-view .img {
+    width: 50px;
+    height: 56px;
+    background-color: #0aa9dc;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+#page_weather .table-view img {
+    width: 35px;
+}
+#page_weather .table-view-cell div {
+    display: inline-block;
+    position: absolute;
+    left: 51px;
+    right: 15px;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-bottom: 1px solid #0aa9dc;
 }
 /* ======================================= 日历 ==========================================================*/
 #page_calendar {
