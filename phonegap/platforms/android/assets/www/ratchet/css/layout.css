@@ -23,6 +23,9 @@ p {
     font-size: 13px;
     color: #666;
 }
+label {
+    font-weight: normal;
+}
 .bar-tab .tab-item .icon~.tab-label {
     font-size: 10px;
 }
@@ -264,6 +267,13 @@ td .input-group .input-group-addon .fa:before {
     font-size: 15px;
     color: #666;
     position: absolute;
+    width: 28px;
+}
+.formGrid .form_row .right img {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    width: 28px;
 }
 .formGrid .toggle {
     margin-top: 8px;
@@ -278,10 +288,10 @@ td .input-group .input-group-addon .fa:before {
     display: -webkit-flex;
     display: flex;
 }
-.flex_right *:first-child {
+.flex_right > *:first-child {
     flex: 1;
 }
-.flex_left *:last-child {
+.flex_left > *:last-child {
     flex: 1;
 }
 .formGrid .form_panel {
@@ -926,11 +936,23 @@ footer a.active #icon_person {
     color: #00bcd4;
     font-size: 16px;
 }
+#scanCheckIn img {
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
 #hbh, #scanCheckIn {
     height: 45px;
+    line-height: 45px;
+    padding: 0;
 }
 #hbh {
-    padding-top: 5px;
+    padding-top: 0;
+}
+#hbh label {
+    padding: 0;
+}
+#hbh input {
+    margin-top: 5px;
 }
 #page_hbdt {
     background:rgba(238,238,238,255);
@@ -1482,6 +1504,11 @@ footer a.active #icon_person {
     line-height: 48px;
     border-bottom: 1px solid #e0e0e0;
 }
+#page_weather .weather_top  img {
+    width: 28px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
 #page_weather .table-view {
     font-size: 15px;
     color: #333;
@@ -1512,6 +1539,12 @@ footer a.active #icon_person {
     padding-left: 10px;
     padding-right: 5px;
     border-bottom: 1px solid #0aa9dc;
+}
+/* ======================================= 机场商城 ==========================================================*/
+#page_airport_mall .nav_img{
+    width: 114px;
+    height: 22px;
+    margin-left: -15px;
 }
 /* ======================================= 日历 ==========================================================*/
 #page_calendar {
@@ -1753,8 +1786,75 @@ footer a.active #icon_person {
     background-color: #fff;
 }
 .input_select select {
-    background: url("../image/airport_nav/select_arraw1.png")  no-repeat;
+    background: url("../image/airport_nav/select_arraw1.png") no-repeat 95% 50%;
     background-size: 10px 5px;
-    background-position: -75px 0;
+}
 
+#restaurant_service img {
+    width: 15px;
+}
+
+/* 日历跳转 */
+li.table-view-cell > a.calendar_go {
+    padding: 0;
+    padding-left: 15px;
+}
+li.table-view-cell > a.calendar_go img {
+    width: 28px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+/* 文字排版 */
+.text_layout {
+    padding: 15px;
+}
+.text_layout h3 {
+    padding: 0;
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #333;
+}
+.text_layout h5 {
+    padding: 0;
+    font-size: 12px;
+    margin: 0 0 15px;
+    color: #999;
+}
+.text_layout p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.text_layout p img {
+    margin: 15px auto;
+    display: block;
+    width: 100%;
+}
+/** 关于 */
+#page_about .flex_left {
+    height: 112px;
+}
+
+#page_about .flex_left img {
+    width: 80px;
+    height: 80px;
+    margin: 16px;
+}
+#page_about .flex_left h3 {
+    margin-top: 38px;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+#page_about .flex_left h3 span {
+    font-size: 12px;
+    color: #999;
+}
+#page_about .flex_left a {
+    font-size: 12px;
+    color: #00bcd4;
+}
+#page_about .table-view {
+    font-size: 15px;
+    color: #333;
 }
